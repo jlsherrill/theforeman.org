@@ -1,0 +1,5638 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API 文档</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type='text/css' rel='stylesheet' href='../apidoc/stylesheets/bundled/bootstrap.min.css'/>
+<link type='text/css' rel='stylesheet' href='../apidoc/stylesheets/bundled/prettify.css'/>
+<link type='text/css' rel='stylesheet' href='../apidoc/stylesheets/bundled/bootstrap-responsive.min.css'/>
+  <link type='text/css' rel='stylesheet' href='../apidoc/stylesheets/application.css'/>
+  <!-- IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div id='container'>
+        <ul class='breadcrumb'>
+  <li class='active'><a href='../apidoc/v2.zh_CN.html'>Foreman v2</a></li>
+  <li class='pull-right'>
+  &nbsp;[ <a href="../apidoc/v2.it.html">it</a> | <a href="../apidoc/v2.ja.html">ja</a> | <a href="../apidoc/v2.gl.html">gl</a> | <a href="../apidoc/v2.zh_TW.html">zh_TW</a> | <a href="../apidoc/v2.sv_SE.html">sv_SE</a> | <b><a href="../apidoc/v2.zh_CN.html">zh_CN</a></b> | <a href="../apidoc/v2.ko.html">ko</a> | <a href="../apidoc/v2.en.html">en</a> | <a href="../apidoc/v2.pl.html">pl</a> | <a href="../apidoc/v2.fr.html">fr</a> | <a href="../apidoc/v2.ru.html">ru</a> | <a href="../apidoc/v2.ca.html">ca</a> | <a href="../apidoc/v2.pt_BR.html">pt_BR</a> | <a href="../apidoc/v2.en_GB.html">en_GB</a> | <a href="../apidoc/v2.es.html">es</a> | <a href="../apidoc/v2.de.html">de</a> ]
+</li>
+
+  <li class='pull-right'>
+    <a href="../apidoc/v1.zh_CN.html">v1</a> / <a href="../apidoc/v2.zh_CN.html">v2</a>
+  </li>
+</ul>
+
+<div>
+<p>Foreman API v2 is currently the default API version.</p>
+</div>
+
+<h1 class='page-header'>资源</h1>
+
+  <h2>
+    <a href='../apidoc/v2/activation_keys.zh_CN.html'>
+      Activation keys
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/index.zh_CN.html'>GET /katello/api/activation_keys</a>
+            </td>
+            <td width='60%'>激活码列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/index.zh_CN.html'>GET /katello/api/environments/:environment_id/activation_keys</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/index.zh_CN.html'>GET /katello/api/organizations/:organization_id/activation_keys</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/create.zh_CN.html'>POST /katello/api/activation_keys</a>
+            </td>
+            <td width='60%'>创建激活码</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/update.zh_CN.html'>PUT /katello/api/activation_keys/:id</a>
+            </td>
+            <td width='60%'>更新激活码</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/destroy.zh_CN.html'>DELETE /katello/api/activation_keys/:id</a>
+            </td>
+            <td width='60%'>消除激活码</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/show.zh_CN.html'>GET /katello/api/activation_keys/:id</a>
+            </td>
+            <td width='60%'>显示激活码</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/copy.zh_CN.html'>POST /katello/api/activation_keys/:id/copy</a>
+            </td>
+            <td width='60%'>复制激活码</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/available_host_collections.zh_CN.html'>GET /katello/api/activation_keys/:id/host_collections/available</a>
+            </td>
+            <td width='60%'>List host collections the activation key does not belong to</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/available_releases.zh_CN.html'>GET /katello/api/activation_keys/:id/releases</a>
+            </td>
+            <td width='60%'>显示激活码的可用发行版本</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/product_content.zh_CN.html'>GET /katello/api/activation_keys/:id/product_content</a>
+            </td>
+            <td width='60%'>显示可用于激活码的内容</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/add_host_collections.zh_CN.html'>POST /katello/api/activation_keys/:id/host_collections</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/remove_host_collections.zh_CN.html'>PUT /katello/api/activation_keys/:id/host_collections</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/add_subscriptions.zh_CN.html'>PUT /katello/api/activation_keys/:id/add_subscriptions</a>
+            </td>
+            <td width='60%'>附加订阅</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/remove_subscriptions.zh_CN.html'>PUT /katello/api/activation_keys/:id/remove_subscriptions</a>
+            </td>
+            <td width='60%'>取消附加订阅</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/activation_keys/content_override.zh_CN.html'>PUT /katello/api/activation_keys/:id/content_override</a>
+            </td>
+            <td width='60%'>为 activation_key 覆盖内容</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/architectures.zh_CN.html'>
+      Architectures
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/architectures/index.zh_CN.html'>GET /api/architectures</a>
+            </td>
+            <td width='60%'>列出所有架构</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/architectures/index.zh_CN.html'>GET /api/operatingsystems/:operatingsystem_id/architectures</a>
+            </td>
+            <td width='60%'>列出操作系统的所有架构</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/architectures/show.zh_CN.html'>GET /api/architectures/:id</a>
+            </td>
+            <td width='60%'>显示架构</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/architectures/create.zh_CN.html'>POST /api/architectures</a>
+            </td>
+            <td width='60%'>创建架构</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/architectures/update.zh_CN.html'>PUT /api/architectures/:id</a>
+            </td>
+            <td width='60%'>更新架构</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/architectures/destroy.zh_CN.html'>DELETE /api/architectures/:id</a>
+            </td>
+            <td width='60%'>删除架构</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/audits.zh_CN.html'>
+      Audits
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/audits/index.zh_CN.html'>GET /api/audits</a>
+            </td>
+            <td width='60%'>列出所有审核</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/audits/index.zh_CN.html'>GET /api/hosts/:host_id/audits</a>
+            </td>
+            <td width='60%'>列出给定主机的所有审核</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/audits/show.zh_CN.html'>GET /api/audits/:id</a>
+            </td>
+            <td width='60%'>显示审核</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/auth_source_ldaps.zh_CN.html'>
+      Auth source ldaps
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/auth_source_ldaps/index.zh_CN.html'>GET /api/auth_source_ldaps</a>
+            </td>
+            <td width='60%'>列出所有 LDAP 认证源</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/auth_source_ldaps/index.zh_CN.html'>GET /api/locations/:location_id/auth_source_ldaps</a>
+            </td>
+            <td width='60%'>List LDAP authentication sources per location</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/auth_source_ldaps/index.zh_CN.html'>GET /api/organizations/:organization_id/auth_source_ldaps</a>
+            </td>
+            <td width='60%'>List LDAP authentication sources per organization</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/auth_source_ldaps/show.zh_CN.html'>GET /api/auth_source_ldaps/:id</a>
+            </td>
+            <td width='60%'>显示 LDAP 认证源</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/auth_source_ldaps/create.zh_CN.html'>POST /api/auth_source_ldaps</a>
+            </td>
+            <td width='60%'>创建 LDAP 认证源</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/auth_source_ldaps/update.zh_CN.html'>PUT /api/auth_source_ldaps/:id</a>
+            </td>
+            <td width='60%'>更新 LDAP 认证源</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/auth_source_ldaps/test.zh_CN.html'>PUT /api/auth_source_ldaps/:id/test</a>
+            </td>
+            <td width='60%'>测试 LDAP 连接</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/auth_source_ldaps/destroy.zh_CN.html'>DELETE /api/auth_source_ldaps/:id</a>
+            </td>
+            <td width='60%'>删除 LDAP 认证源</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/autosign.zh_CN.html'>
+      Autosign
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/autosign/index.zh_CN.html'>GET /api/smart_proxies/smart_proxy_id/autosign</a>
+            </td>
+            <td width='60%'>列出所有自动签名条目</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/bookmarks.zh_CN.html'>
+      Bookmarks
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/bookmarks/index.zh_CN.html'>GET /api/bookmarks</a>
+            </td>
+            <td width='60%'>列出所有收藏</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/bookmarks/show.zh_CN.html'>GET /api/bookmarks/:id</a>
+            </td>
+            <td width='60%'>显示收藏</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/bookmarks/create.zh_CN.html'>POST /api/bookmarks</a>
+            </td>
+            <td width='60%'>创建收藏</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/bookmarks/update.zh_CN.html'>PUT /api/bookmarks/:id</a>
+            </td>
+            <td width='60%'>更新收藏</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/bookmarks/destroy.zh_CN.html'>DELETE /api/bookmarks/:id</a>
+            </td>
+            <td width='60%'>删除收藏</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/capsule_content.zh_CN.html'>
+      Capsule content
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/capsule_content/lifecycle_environments.zh_CN.html'>GET /katello/api/capsules/:id/content/lifecycle_environments</a>
+            </td>
+            <td width='60%'>List the lifecycle environments attached to the smart proxy</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/capsule_content/available_lifecycle_environments.zh_CN.html'>GET /katello/api/capsules/:id/content/available_lifecycle_environments</a>
+            </td>
+            <td width='60%'>List the lifecycle environments not attached to the smart proxy</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/capsule_content/add_lifecycle_environment.zh_CN.html'>POST /katello/api/capsules/:id/content/lifecycle_environments</a>
+            </td>
+            <td width='60%'>Add lifecycle environments to the smart proxy</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/capsule_content/remove_lifecycle_environment.zh_CN.html'>DELETE /katello/api/capsules/:id/content/lifecycle_environments/:environment_id</a>
+            </td>
+            <td width='60%'>Remove lifecycle environments from the smart proxy</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/capsule_content/sync.zh_CN.html'>POST /katello/api/capsules/:id/content/sync</a>
+            </td>
+            <td width='60%'>Synchronize the content to the smart proxy</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/capsule_content/sync_status.zh_CN.html'>GET /katello/api/capsules/:id/content/sync</a>
+            </td>
+            <td width='60%'>Get current smart proxy synchronization status</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/capsule_content/cancel_sync.zh_CN.html'>DELETE /katello/api/capsules/:id/content/sync</a>
+            </td>
+            <td width='60%'>Cancel running smart proxy synchronization.</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/capsules.zh_CN.html'>
+      Capsules
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/capsules/index.zh_CN.html'>GET /katello/api/capsules</a>
+            </td>
+            <td width='60%'>List all smart proxies that have content</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/capsules/show.zh_CN.html'>GET /katello/api/capsules/:id</a>
+            </td>
+            <td width='60%'>Show the smart proxy details</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/common_parameters.zh_CN.html'>
+      Common parameters
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/common_parameters/index.zh_CN.html'>GET /api/common_parameters</a>
+            </td>
+            <td width='60%'>列出所有全局参数。</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/common_parameters/show.zh_CN.html'>GET /api/common_parameters/:id</a>
+            </td>
+            <td width='60%'>显示全局参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/common_parameters/create.zh_CN.html'>POST /api/common_parameters</a>
+            </td>
+            <td width='60%'>创建全局参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/common_parameters/update.zh_CN.html'>PUT /api/common_parameters/:id</a>
+            </td>
+            <td width='60%'>更新全局参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/common_parameters/destroy.zh_CN.html'>DELETE /api/common_parameters/:id</a>
+            </td>
+            <td width='60%'>删除全局参数</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/compute_attributes.zh_CN.html'>
+      Compute attributes
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_attributes/create.zh_CN.html'>POST /api/compute_resources/:compute_resource_id/compute_profiles/:compute_profile_id/compute_attributes</a>
+            </td>
+            <td width='60%'>创建计算属性集</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_attributes/create.zh_CN.html'>POST /api/compute_profiles/:compute_profile_id/compute_resources/:compute_resource_id/compute_attributes</a>
+            </td>
+            <td width='60%'>创建计算属性集</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_attributes/create.zh_CN.html'>POST /api/compute_resources/:compute_resource_id/compute_attributes</a>
+            </td>
+            <td width='60%'>创建计算属性集</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_attributes/create.zh_CN.html'>POST /api/compute_profiles/:compute_profile_id/compute_attributes</a>
+            </td>
+            <td width='60%'>创建计算属性集</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_attributes/create.zh_CN.html'>POST /api/compute_attributes</a>
+            </td>
+            <td width='60%'>创建计算属性集</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_attributes/update.zh_CN.html'>PUT /api/compute_resources/:compute_resource_id/compute_profiles/:compute_profile_id/compute_attributes/:id</a>
+            </td>
+            <td width='60%'>更新计算属性集</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_attributes/update.zh_CN.html'>PUT /api/compute_profiles/:compute_profile_id/compute_resources/:compute_resource_id/compute_attributes/:id</a>
+            </td>
+            <td width='60%'>更新计算属性集</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_attributes/update.zh_CN.html'>PUT /api/compute_resources/:compute_resource_id/compute_attributes/:id</a>
+            </td>
+            <td width='60%'>更新计算属性集</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_attributes/update.zh_CN.html'>PUT /api/compute_profiles/:compute_profile_id/compute_attributes/:id</a>
+            </td>
+            <td width='60%'>更新计算属性集</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_attributes/update.zh_CN.html'>PUT /api/compute_attributes/:id</a>
+            </td>
+            <td width='60%'>更新计算属性集</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/compute_profiles.zh_CN.html'>
+      Compute profiles
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_profiles/index.zh_CN.html'>GET /api/compute_profiles</a>
+            </td>
+            <td width='60%'>计算配置文件列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_profiles/show.zh_CN.html'>GET /api/compute_profiles/:id</a>
+            </td>
+            <td width='60%'>显示计算配置文件</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_profiles/create.zh_CN.html'>POST /api/compute_profiles</a>
+            </td>
+            <td width='60%'>创建计算配置文件</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_profiles/update.zh_CN.html'>PUT /api/compute_profiles/:id</a>
+            </td>
+            <td width='60%'>更新计算配置文件</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_profiles/destroy.zh_CN.html'>DELETE /api/compute_profiles/:id</a>
+            </td>
+            <td width='60%'>删除计算配置文件</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/compute_resources.zh_CN.html'>
+      Compute resources
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/index.zh_CN.html'>GET /api/compute_resources</a>
+            </td>
+            <td width='60%'>列出所有计算资源</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/show.zh_CN.html'>GET /api/compute_resources/:id</a>
+            </td>
+            <td width='60%'>显示计算资源</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/create.zh_CN.html'>POST /api/compute_resources</a>
+            </td>
+            <td width='60%'>创建计算资源</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/update.zh_CN.html'>PUT /api/compute_resources/:id</a>
+            </td>
+            <td width='60%'>更新计算资源</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/destroy.zh_CN.html'>DELETE /api/compute_resources/:id</a>
+            </td>
+            <td width='60%'>删除计算资源</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/available_images.zh_CN.html'>GET /api/compute_resources/:id/available_images</a>
+            </td>
+            <td width='60%'>列出计算资源的所有可用映像</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/available_clusters.zh_CN.html'>GET /api/compute_resources/:id/available_clusters</a>
+            </td>
+            <td width='60%'>列出计算资源的所有可用集群</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/available_flavors.zh_CN.html'>GET /api/compute_resources/:id/available_flavors</a>
+            </td>
+            <td width='60%'>列出计算资源的所有可用风格</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/available_folders.zh_CN.html'>GET /api/compute_resources/:id/available_folders</a>
+            </td>
+            <td width='60%'>列出计算资源的所有可用文件夹</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/available_zones.zh_CN.html'>GET /api/compute_resources/:id/available_zones</a>
+            </td>
+            <td width='60%'>列出计算资源的所有可用区域</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/available_networks.zh_CN.html'>GET /api/compute_resources/:id/available_networks</a>
+            </td>
+            <td width='60%'>列出计算资源的所有可用网络</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/available_networks.zh_CN.html'>GET /api/compute_resources/:id/available_clusters/:cluster_id/available_networks</a>
+            </td>
+            <td width='60%'>列出计算资源集群的所有可用网络</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/available_resource_pools.zh_CN.html'>GET /api/compute_resources/:id/available_clusters/:cluster_id/available_resource_pools</a>
+            </td>
+            <td width='60%'>列出计算资源集群的资源池</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/available_storage_domains.zh_CN.html'>GET /api/compute_resources/:id/available_storage_domains</a>
+            </td>
+            <td width='60%'>列出计算资源的存储域</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/available_storage_domains.zh_CN.html'>GET /api/compute_resources/:id/available_storage_domains/:storage_domain</a>
+            </td>
+            <td width='60%'>列出给定存储域的所有属性</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/available_storage_pods.zh_CN.html'>GET /api/compute_resources/:id/available_storage_pods</a>
+            </td>
+            <td width='60%'>列出计算资源的存储 pod</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/available_storage_pods.zh_CN.html'>GET /api/compute_resources/:id/available_storage_pods/:storage_pod</a>
+            </td>
+            <td width='60%'>列出给定存储 pod 的属性</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/available_security_groups.zh_CN.html'>GET /api/compute_resources/:id/available_security_groups</a>
+            </td>
+            <td width='60%'>列出计算资源的可用安全组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/associate.zh_CN.html'>PUT /api/compute_resources/:id/associate</a>
+            </td>
+            <td width='60%'>将 VM 与主机关联</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/compute_resources/refresh_cache.zh_CN.html'>PUT /api/compute_resources/:id/refresh_cache</a>
+            </td>
+            <td width='60%'>Refresh Compute Resource Cache</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/config_groups.zh_CN.html'>
+      Config groups
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_groups/index.zh_CN.html'>GET /api/config_groups</a>
+            </td>
+            <td width='60%'>配置组列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_groups/show.zh_CN.html'>GET /api/config_groups/:id</a>
+            </td>
+            <td width='60%'>显示配置组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_groups/create.zh_CN.html'>POST /api/config_groups</a>
+            </td>
+            <td width='60%'>创建配置组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_groups/update.zh_CN.html'>PUT /api/config_groups/:id</a>
+            </td>
+            <td width='60%'>更新配置组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_groups/destroy.zh_CN.html'>DELETE /api/config_groups/:id</a>
+            </td>
+            <td width='60%'>删除配置组</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/config_reports.zh_CN.html'>
+      Config reports
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_reports/index.zh_CN.html'>GET /api/config_reports</a>
+            </td>
+            <td width='60%'>列出所有报告</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_reports/show.zh_CN.html'>GET /api/config_reports/:id</a>
+            </td>
+            <td width='60%'>显示报告</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_reports/create.zh_CN.html'>POST /api/config_reports</a>
+            </td>
+            <td width='60%'>创建报告</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_reports/destroy.zh_CN.html'>DELETE /api/config_reports/:id</a>
+            </td>
+            <td width='60%'>删除报告</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_reports/last.zh_CN.html'>GET /api/hosts/:host_id/config_reports/last</a>
+            </td>
+            <td width='60%'>显示主机的最新报告</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/config_templates.zh_CN.html'>
+      Config templates
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_templates/index.zh_CN.html'>GET /api/config_templates</a>
+            </td>
+            <td width='60%'>列出预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_templates/index.zh_CN.html'>GET /api/operatingsystems/:operatingsystem_id/config_templates</a>
+            </td>
+            <td width='60%'>列出每个操作系统的预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_templates/index.zh_CN.html'>GET /api/locations/:location_id/config_templates</a>
+            </td>
+            <td width='60%'>列出每个位置的预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_templates/index.zh_CN.html'>GET /api/organizations/:organization_id/config_templates</a>
+            </td>
+            <td width='60%'>列出每个机构的预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_templates/show.zh_CN.html'>GET /api/config_templates/:id</a>
+            </td>
+            <td width='60%'>显示预配模板详情</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_templates/create.zh_CN.html'>POST /api/config_templates</a>
+            </td>
+            <td width='60%'>创建预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_templates/update.zh_CN.html'>PUT /api/config_templates/:id</a>
+            </td>
+            <td width='60%'>更新预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_templates/revision.zh_CN.html'>GET /api/config_templates/revision</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_templates/destroy.zh_CN.html'>DELETE /api/config_templates/:id</a>
+            </td>
+            <td width='60%'>删除预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_templates/build_pxe_default.zh_CN.html'>POST /api/config_templates/build_pxe_default</a>
+            </td>
+            <td width='60%'>更新所有配置 TFTP 服务器的默认 PXE 菜单</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/config_templates/clone.zh_CN.html'>POST /api/config_templates/:id/clone</a>
+            </td>
+            <td width='60%'>克隆预配模板</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/containers.zh_CN.html'>
+      Containers
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/containers/index.zh_CN.html'>GET /docker/api/v2/containers</a>
+            </td>
+            <td width='60%'>列出所有容器</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/containers/index.zh_CN.html'>GET /docker/api/v2/compute_resources/:compute_resource_id/containers</a>
+            </td>
+            <td width='60%'>List all containers on a compute resource</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/containers/show.zh_CN.html'>GET /docker/api/v2/containers/:id</a>
+            </td>
+            <td width='60%'>显示容器</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/containers/show.zh_CN.html'>GET /docker/api/v2/compute_resources/:compute_resource_id/containers/:id</a>
+            </td>
+            <td width='60%'>Show container on a compute resource</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/containers/create.zh_CN.html'>POST /docker/api/v2/containers</a>
+            </td>
+            <td width='60%'>生成容器</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/containers/create.zh_CN.html'>POST /docker/api/v2/compute_resources/:compute_resource_id/containers</a>
+            </td>
+            <td width='60%'>Create container on a compute resource</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/containers/destroy.zh_CN.html'>DELETE /docker/api/v2/containers/:id</a>
+            </td>
+            <td width='60%'>删除容器</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/containers/destroy.zh_CN.html'>DELETE /docker/api/v2/compute_resources/:compute_resource_id/containers/:id</a>
+            </td>
+            <td width='60%'>Delete container on a compute resource</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/containers/logs.zh_CN.html'>GET /docker/api/v2/containers/:id/logs</a>
+            </td>
+            <td width='60%'>显示容器日志</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/containers/logs.zh_CN.html'>GET /docker/api/v2/compute_resources/:compute_resource_id/containers/:id/logs</a>
+            </td>
+            <td width='60%'>Show logs from a container on a compute resource</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/containers/power.zh_CN.html'>PUT /docker/api/v2/containers/:id/power</a>
+            </td>
+            <td width='60%'>在容器中运行电源操作</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/containers/power.zh_CN.html'>PUT /docker/api/v2/compute_resources/:compute_resource_id/containers/:id/power</a>
+            </td>
+            <td width='60%'>Run power operation on a container on a compute resource</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/content_uploads.zh_CN.html'>
+      Content uploads
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_uploads/create.zh_CN.html'>POST /katello/api/repositories/:repository_id/content_uploads</a>
+            </td>
+            <td width='60%'>创建上传请求</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_uploads/update.zh_CN.html'>PUT /katello/api/repositories/:repository_id/content_uploads/:id</a>
+            </td>
+            <td width='60%'>上传文件内容块</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_uploads/destroy.zh_CN.html'>DELETE /katello/api/repositories/:repository_id/content_uploads/:id</a>
+            </td>
+            <td width='60%'>删除上传请求</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/content_view_components.zh_CN.html'>
+      Content view components
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_components/index.zh_CN.html'>GET /katello/api/content_views/:composite_content_view_id/content_view_components</a>
+            </td>
+            <td width='60%'>List components attached to this content view</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_components/add_components.zh_CN.html'>PUT /katello/api/content_views/:composite_content_view_id/content_view_components/add</a>
+            </td>
+            <td width='60%'>Add components to the content view</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_components/remove_components.zh_CN.html'>PUT /katello/api/content_views/:composite_content_view_id/content_view_components/remove</a>
+            </td>
+            <td width='60%'>Remove components from the content view</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_components/show.zh_CN.html'>GET /katello/api/content_views/:composite_content_view_id/content_view_components/:id</a>
+            </td>
+            <td width='60%'>Show a content view component</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_components/update.zh_CN.html'>PUT /katello/api/content_views/:composite_content_view_id/content_view_components/:id</a>
+            </td>
+            <td width='60%'>Update a component associated with the content view</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/content_view_filter_rules.zh_CN.html'>
+      Content view filter rules
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filter_rules/index.zh_CN.html'>GET /katello/api/content_view_filters/:content_view_filter_id/rules</a>
+            </td>
+            <td width='60%'>列出过滤器规则</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filter_rules/create.zh_CN.html'>POST /katello/api/content_view_filters/:content_view_filter_id/rules</a>
+            </td>
+            <td width='60%'>创建过滤器规则。应根据过滤器类型选择包含的参数。</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filter_rules/show.zh_CN.html'>GET /katello/api/content_view_filters/:content_view_filter_id/rules/:id</a>
+            </td>
+            <td width='60%'>显示过滤器规则信息</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filter_rules/update.zh_CN.html'>PUT /katello/api/content_view_filters/:content_view_filter_id/rules/:id</a>
+            </td>
+            <td width='60%'>更新过滤器规则。应根据过滤器类型选择包含的参数。</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filter_rules/destroy.zh_CN.html'>DELETE /katello/api/content_view_filters/:content_view_filter_id/rules/:id</a>
+            </td>
+            <td width='60%'>删除过滤器规则</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/content_view_filters.zh_CN.html'>
+      Content view filters
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filters/index.zh_CN.html'>get /katello/api/content_views/:content_view_id/filters</a>
+            </td>
+            <td width='60%'>list filters</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filters/index.zh_CN.html'>get /katello/api/content_view_filters</a>
+            </td>
+            <td width='60%'>list filters</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filters/create.zh_CN.html'>post /katello/api/content_views/:content_view_id/filters</a>
+            </td>
+            <td width='60%'>create a filter for a content view</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filters/create.zh_CN.html'>post /katello/api/content_view_filters</a>
+            </td>
+            <td width='60%'>create a filter for a content view</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filters/show.zh_CN.html'>get /katello/api/content_views/:content_view_id/filters/:id</a>
+            </td>
+            <td width='60%'>show filter info</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filters/show.zh_CN.html'>get /katello/api/content_view_filters/:id</a>
+            </td>
+            <td width='60%'>show filter info</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filters/update.zh_CN.html'>put /katello/api/content_views/:content_view_id/filters/:id</a>
+            </td>
+            <td width='60%'>update a filter</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filters/update.zh_CN.html'>put /katello/api/content_view_filters/:id</a>
+            </td>
+            <td width='60%'>update a filter</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filters/destroy.zh_CN.html'>delete /katello/api/content_views/:content_view_id/filters/:id</a>
+            </td>
+            <td width='60%'>delete a filter</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_filters/destroy.zh_CN.html'>delete /katello/api/content_view_filters/:id</a>
+            </td>
+            <td width='60%'>delete a filter</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/content_view_histories.zh_CN.html'>
+      Content view histories
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_histories/index.zh_CN.html'>GET /katello/api/content_views/:id/history</a>
+            </td>
+            <td width='60%'>显示内容视图历史记录</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/content_view_puppet_modules.zh_CN.html'>
+      Content view puppet modules
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_puppet_modules/index.zh_CN.html'>GET /katello/api/content_views/:content_view_id/content_view_puppet_modules</a>
+            </td>
+            <td width='60%'>列出内容视图 puppet 模块</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_puppet_modules/create.zh_CN.html'>POST /katello/api/content_views/:content_view_id/content_view_puppet_modules</a>
+            </td>
+            <td width='60%'>在内容视图中添加 puppet 模块</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_puppet_modules/show.zh_CN.html'>GET /katello/api/content_views/:content_view_id/content_view_puppet_modules/:id</a>
+            </td>
+            <td width='60%'>显示内容视图 puppet 模块</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_puppet_modules/update.zh_CN.html'>PUT /katello/api/content_views/:content_view_id/content_view_puppet_modules/:id</a>
+            </td>
+            <td width='60%'>更新与内容视图中关联的 puppet 模块</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_puppet_modules/destroy.zh_CN.html'>DELETE /katello/api/content_views/:content_view_id/content_view_puppet_modules/:id</a>
+            </td>
+            <td width='60%'>从内容视图中删除 puppet 模块</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/content_view_versions.zh_CN.html'>
+      Content view versions
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_versions/index.zh_CN.html'>GET /katello/api/content_view_versions</a>
+            </td>
+            <td width='60%'>列出内容视图版本</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_versions/index.zh_CN.html'>GET /katello/api/content_views/:content_view_id/content_view_versions</a>
+            </td>
+            <td width='60%'>列出内容视图版本</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_versions/show.zh_CN.html'>GET /katello/api/content_view_versions/:id</a>
+            </td>
+            <td width='60%'>显示内容视图版本</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_versions/promote.zh_CN.html'>POST /katello/api/content_view_versions/:id/promote</a>
+            </td>
+            <td width='60%'>推广视图版本</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_versions/export.zh_CN.html'>POST /katello/api/content_view_versions/:id/export</a>
+            </td>
+            <td width='60%'>Export a content view version</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_versions/destroy.zh_CN.html'>DELETE /katello/api/content_view_versions/:id</a>
+            </td>
+            <td width='60%'>删除内容视图版本</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_view_versions/incremental_update.zh_CN.html'>POST /katello/api/content_view_versions/incremental_update</a>
+            </td>
+            <td width='60%'>在一个或多个内容视图版本中执行增量更新</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/content_views.zh_CN.html'>
+      Content views
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_views/index.zh_CN.html'>GET /katello/api/organizations/:organization_id/content_views</a>
+            </td>
+            <td width='60%'>列出内容视图</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_views/index.zh_CN.html'>GET /katello/api/content_views</a>
+            </td>
+            <td width='60%'>列出内容视图</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_views/create.zh_CN.html'>POST /katello/api/organizations/:organization_id/content_views</a>
+            </td>
+            <td width='60%'>创建内容视图</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_views/create.zh_CN.html'>POST /katello/api/content_views</a>
+            </td>
+            <td width='60%'>创建内容视图</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_views/update.zh_CN.html'>PUT /katello/api/content_views/:id</a>
+            </td>
+            <td width='60%'>更新内容视图</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_views/publish.zh_CN.html'>POST /katello/api/content_views/:id/publish</a>
+            </td>
+            <td width='60%'>发布内容视图</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_views/show.zh_CN.html'>GET /katello/api/content_views/:id</a>
+            </td>
+            <td width='60%'>显示内容视图</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_views/available_puppet_modules.zh_CN.html'>GET /katello/api/content_views/:id/available_puppet_modules</a>
+            </td>
+            <td width='60%'>获取可添加到内容视图中的的 Puppet 模块</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_views/available_puppet_module_names.zh_CN.html'>GET /katello/api/content_views/:id/available_puppet_module_names</a>
+            </td>
+            <td width='60%'>获取可添加到内容视图中的的 Puppet 模块名称</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_views/remove_from_environment.zh_CN.html'>DELETE /katello/api/content_views/:id/environments/:environment_id</a>
+            </td>
+            <td width='60%'>从环境中删除内容视图</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_views/remove.zh_CN.html'>PUT /katello/api/content_views/:id/remove</a>
+            </td>
+            <td width='60%'>从内容视图中删除版本和/（或者）环境，并重新分配系统及密钥。</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_views/destroy.zh_CN.html'>DELETE /katello/api/content_views/:id</a>
+            </td>
+            <td width='60%'>删除内容视图</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/content_views/copy.zh_CN.html'>POST /katello/api/content_views/:id/copy</a>
+            </td>
+            <td width='60%'>复制内容视图</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/dashboard.zh_CN.html'>
+      Dashboard
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/dashboard/index.zh_CN.html'>GET /api/dashboard</a>
+            </td>
+            <td width='60%'>获取仪表板详情</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/docker_manifests.zh_CN.html'>
+      Docker manifests
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_manifests/index.zh_CN.html'>GET /katello/api/docker_manifests</a>
+            </td>
+            <td width='60%'>List docker_manifests</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_manifests/index.zh_CN.html'>GET /katello/api/content_views/:content_view_id/filters/:filter_id/docker_manifests</a>
+            </td>
+            <td width='60%'>List docker_manifests</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_manifests/index.zh_CN.html'>GET /katello/api/content_view_filters/:content_view_filter_id/docker_manifests</a>
+            </td>
+            <td width='60%'>List docker_manifests</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_manifests/index.zh_CN.html'>GET /katello/api/repositories/:repository_id/docker_manifests</a>
+            </td>
+            <td width='60%'>List docker_manifests</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_manifests/show.zh_CN.html'>GET /katello/api/docker_manifests/:id</a>
+            </td>
+            <td width='60%'>Show a docker manifest</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_manifests/show.zh_CN.html'>GET /katello/api/repositories/:repository_id/docker_manifests/:id</a>
+            </td>
+            <td width='60%'>Show a docker manifest</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_manifests/compare.zh_CN.html'>GET /katello/api/compare</a>
+            </td>
+            <td width='60%'>List docker_manifests</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/docker_tags.zh_CN.html'>
+      Docker tags
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_tags/index.zh_CN.html'>GET /katello/api/docker_tags</a>
+            </td>
+            <td width='60%'>List docker_tags</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_tags/index.zh_CN.html'>GET /katello/api/content_views/:content_view_id/filters/:filter_id/docker_tags</a>
+            </td>
+            <td width='60%'>List docker_tags</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_tags/index.zh_CN.html'>GET /katello/api/content_view_filters/:content_view_filter_id/docker_tags</a>
+            </td>
+            <td width='60%'>List docker_tags</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_tags/index.zh_CN.html'>GET /katello/api/repositories/:repository_id/docker_tags</a>
+            </td>
+            <td width='60%'>List docker_tags</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_tags/show.zh_CN.html'>GET /katello/api/docker_tags/:id</a>
+            </td>
+            <td width='60%'>Show a docker tag</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_tags/show.zh_CN.html'>GET /katello/api/repositories/:repository_id/docker_tags/:id</a>
+            </td>
+            <td width='60%'>Show a docker tag</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/docker_tags/compare.zh_CN.html'>GET /katello/api/compare</a>
+            </td>
+            <td width='60%'>List docker_tags</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/domains.zh_CN.html'>
+      Domains
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/domains/index.zh_CN.html'>GET /api/domains</a>
+            </td>
+            <td width='60%'>域列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/domains/index.zh_CN.html'>GET /api/subnets/:subnet_id/domains</a>
+            </td>
+            <td width='60%'>每个子网的域列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/domains/index.zh_CN.html'>GET /api/locations/:location_id/domains</a>
+            </td>
+            <td width='60%'>每个位置的域列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/domains/index.zh_CN.html'>GET /api/organizations/:organization_id/domains</a>
+            </td>
+            <td width='60%'>每个机构的域列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/domains/show.zh_CN.html'>GET /api/domains/:id</a>
+            </td>
+            <td width='60%'>显示域</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/domains/create.zh_CN.html'>POST /api/domains</a>
+            </td>
+            <td width='60%'>创建域</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/domains/update.zh_CN.html'>PUT /api/domains/:id</a>
+            </td>
+            <td width='60%'>更新域</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/domains/destroy.zh_CN.html'>DELETE /api/domains/:id</a>
+            </td>
+            <td width='60%'>删除域</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/environments.zh_CN.html'>
+      Environments
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/environments/import_puppetclasses.zh_CN.html'>POST /api/smart_proxies/:id/import_puppetclasses</a>
+            </td>
+            <td width='60%'>从 puppet 代理服务器导入 puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/environments/import_puppetclasses.zh_CN.html'>POST /api/smart_proxies/:smart_proxy_id/environments/:id/import_puppetclasses</a>
+            </td>
+            <td width='60%'>从 puppet 代理服务器为环境导入 puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/environments/import_puppetclasses.zh_CN.html'>POST /api/environments/:environment_id/smart_proxies/:id/import_puppetclasses</a>
+            </td>
+            <td width='60%'>从 puppet 代理服务器为环境导入 puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/environments/index.zh_CN.html'>GET /api/environments</a>
+            </td>
+            <td width='60%'>列出所有环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/environments/index.zh_CN.html'>GET /api/puppetclasses/:puppetclass_id/environments</a>
+            </td>
+            <td width='60%'>列出 Puppet 类别的环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/environments/index.zh_CN.html'>GET /api/locations/:location_id/environments</a>
+            </td>
+            <td width='60%'>列出每个位置的环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/environments/index.zh_CN.html'>GET /api/organizations/:organization_id/environments</a>
+            </td>
+            <td width='60%'>列出每个机构的环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/environments/show.zh_CN.html'>GET /api/environments/:id</a>
+            </td>
+            <td width='60%'>显示环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/environments/create.zh_CN.html'>POST /api/environments</a>
+            </td>
+            <td width='60%'>创建环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/environments/update.zh_CN.html'>PUT /api/environments/:id</a>
+            </td>
+            <td width='60%'>更新环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/environments/destroy.zh_CN.html'>DELETE /api/environments/:id</a>
+            </td>
+            <td width='60%'>删除环境</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/errata.zh_CN.html'>
+      Errata
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/errata/index.zh_CN.html'>GET /katello/api/errata</a>
+            </td>
+            <td width='60%'>返回勘误</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/errata/show.zh_CN.html'>GET /katello/api/errata/:id</a>
+            </td>
+            <td width='60%'>Show an erratum</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/errata/show.zh_CN.html'>GET /katello/api/repositories/:repository_id/errata/:id</a>
+            </td>
+            <td width='60%'>Show an erratum</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/errata/compare.zh_CN.html'>GET /katello/api/compare</a>
+            </td>
+            <td width='60%'>返回勘误</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/external_usergroups.zh_CN.html'>
+      External usergroups
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/external_usergroups/index.zh_CN.html'>GET /api/usergroups/:usergroup_id/external_usergroups</a>
+            </td>
+            <td width='60%'>列出用户组的所有外部用户组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/external_usergroups/index.zh_CN.html'>GET /api/auth_source_ldaps/:auth_source_ldap_id/external_usergroups</a>
+            </td>
+            <td width='60%'>列出 LDAP 认证源的所有外部用户组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/external_usergroups/show.zh_CN.html'>GET /api/usergroups/:usergroup_id/external_usergroups/:id</a>
+            </td>
+            <td width='60%'>显示用户组的外部用户组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/external_usergroups/show.zh_CN.html'>GET /api/auth_source_ldaps/:auth_source_ldap_id/external_usergroups/:id</a>
+            </td>
+            <td width='60%'>显示 LDAP 认证源的外部用户组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/external_usergroups/create.zh_CN.html'>POST /api/usergroups/:usergroup_id/external_usergroups</a>
+            </td>
+            <td width='60%'>创建链接到用户组的外部用户组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/external_usergroups/update.zh_CN.html'>PUT /api/usergroups/:usergroup_id/external_usergroups/:id</a>
+            </td>
+            <td width='60%'>更新外部用户组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/external_usergroups/refresh.zh_CN.html'>PUT /api/usergroups/:usergroup_id/external_usergroups/:id/refresh</a>
+            </td>
+            <td width='60%'>刷新外部用户组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/external_usergroups/destroy.zh_CN.html'>DELETE /api/usergroups/:usergroup_id/external_usergroups/:id</a>
+            </td>
+            <td width='60%'>删除外部用户组</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/fact_values.zh_CN.html'>
+      Fact values
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/fact_values/index.zh_CN.html'>GET /api/fact_values</a>
+            </td>
+            <td width='60%'>列出所有系统信息值</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/fact_values/index.zh_CN.html'>GET /api/hosts/:host_id/facts</a>
+            </td>
+            <td width='60%'>列出给定主机的所有系统信息值</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/file_units.zh_CN.html'>
+      File units
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/file_units/index.zh_CN.html'>GET /katello/api/file_units</a>
+            </td>
+            <td width='60%'>List file_units</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/file_units/index.zh_CN.html'>GET /katello/api/content_views/:content_view_id/filters/:filter_id/file_units</a>
+            </td>
+            <td width='60%'>List file_units</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/file_units/index.zh_CN.html'>GET /katello/api/content_view_filters/:content_view_filter_id/file_units</a>
+            </td>
+            <td width='60%'>List file_units</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/file_units/index.zh_CN.html'>GET /katello/api/repositories/:repository_id/file_units</a>
+            </td>
+            <td width='60%'>List file_units</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/file_units/show.zh_CN.html'>GET /katello/api/file_units/:id</a>
+            </td>
+            <td width='60%'>Show a file</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/file_units/show.zh_CN.html'>GET /katello/api/repositories/:repository_id/file_units/:id</a>
+            </td>
+            <td width='60%'>Show a file</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/file_units/compare.zh_CN.html'>GET /katello/api/compare</a>
+            </td>
+            <td width='60%'>List file_units</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/filters.zh_CN.html'>
+      Filters
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/filters/index.zh_CN.html'>GET /api/filters</a>
+            </td>
+            <td width='60%'>列出所有过滤器</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/filters/show.zh_CN.html'>GET /api/filters/:id</a>
+            </td>
+            <td width='60%'>显示过滤器</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/filters/create.zh_CN.html'>POST /api/filters</a>
+            </td>
+            <td width='60%'>创建过滤器</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/filters/update.zh_CN.html'>PUT /api/filters/:id</a>
+            </td>
+            <td width='60%'>更新过滤器</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/filters/destroy.zh_CN.html'>DELETE /api/filters/:id</a>
+            </td>
+            <td width='60%'>删除过滤器</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/foreman_tasks.zh_CN.html'>
+      Foreman tasks
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/foreman_tasks/summary.zh_CN.html'>GET /foreman_tasks/api/tasks/summary</a>
+            </td>
+            <td width='60%'>Show task summary</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/foreman_tasks/show.zh_CN.html'>GET /foreman_tasks/api/tasks/:id</a>
+            </td>
+            <td width='60%'>Show task details</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/foreman_tasks/bulk_search.zh_CN.html'>POST /foreman_tasks/api/tasks/bulk_search</a>
+            </td>
+            <td width='60%'>List dynflow tasks for uuids</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/foreman_tasks/bulk_resume.zh_CN.html'>POST /foreman_tasks/api/tasks/bulk_resume</a>
+            </td>
+            <td width='60%'>Resume all paused error tasks</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/foreman_tasks/index.zh_CN.html'>GET /foreman_tasks/api/tasks</a>
+            </td>
+            <td width='60%'>List tasks</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/foreman_tasks/callback.zh_CN.html'>POST /foreman_tasks/api/tasks/callback</a>
+            </td>
+            <td width='60%'>Send data to the task from external executor (such as smart_proxy_dynflow)</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/gpg_keys.zh_CN.html'>
+      Gpg keys
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/gpg_keys/index.zh_CN.html'>GET /katello/api/gpg_keys</a>
+            </td>
+            <td width='60%'>列出 gpg 密钥</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/gpg_keys/create.zh_CN.html'>POST /katello/api/gpg_keys</a>
+            </td>
+            <td width='60%'>创建 gpg 密钥</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/gpg_keys/show.zh_CN.html'>GET /katello/api/gpg_keys/:id</a>
+            </td>
+            <td width='60%'>显示 gpg 密钥</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/gpg_keys/update.zh_CN.html'>PUT /katello/api/gpg_keys/:id</a>
+            </td>
+            <td width='60%'>更新库</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/gpg_keys/destroy.zh_CN.html'>DELETE /katello/api/gpg_keys/:id</a>
+            </td>
+            <td width='60%'>消除 gpg 密钥</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/gpg_keys/content.zh_CN.html'>POST /katello/api/gpg_keys/:id/content</a>
+            </td>
+            <td width='60%'>上传 GPG 密钥内容</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/home.zh_CN.html'>
+      Home
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/home/index.zh_CN.html'>GET /api</a>
+            </td>
+            <td width='60%'>显示可用 API 链接</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/home/status.zh_CN.html'>GET /api/status</a>
+            </td>
+            <td width='60%'>显示状态</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/host_classes.zh_CN.html'>
+      Host classes
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_classes/index.zh_CN.html'>GET /api/hosts/:host_id/puppetclass_ids</a>
+            </td>
+            <td width='60%'>列出主机的所有 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_classes/create.zh_CN.html'>POST /api/hosts/:host_id/puppetclass_ids</a>
+            </td>
+            <td width='60%'>在主机中添加 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_classes/destroy.zh_CN.html'>DELETE /api/hosts/:host_id/puppetclass_ids/:id</a>
+            </td>
+            <td width='60%'>删除主机的 Puppet 类别</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/host_collections.zh_CN.html'>
+      Host collections
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_collections/show.zh_CN.html'>GET /katello/api/host_collections/:id</a>
+            </td>
+            <td width='60%'>显示主机集合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_collections/index.zh_CN.html'>GET /katello/api/host_collections</a>
+            </td>
+            <td width='60%'>列出主机集合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_collections/index.zh_CN.html'>GET /katello/api/organizations/:organization_id/host_collections</a>
+            </td>
+            <td width='60%'>列出机构中的主机集合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_collections/index.zh_CN.html'>GET /katello/api/activation_keys/:activation_key_id/host_collections</a>
+            </td>
+            <td width='60%'>列出激活码中的主机集合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_collections/create.zh_CN.html'>POST /katello/api/host_collections</a>
+            </td>
+            <td width='60%'>创建主机集合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_collections/create.zh_CN.html'>POST /katello/api/organizations/:organization_id/host_collections</a>
+            </td>
+            <td width='60%'>创建主机集合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_collections/update.zh_CN.html'>PUT /katello/api/host_collections/:id</a>
+            </td>
+            <td width='60%'>更新主机集合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_collections/add_hosts.zh_CN.html'>PUT /katello/api/host_collections/:id/add_hosts</a>
+            </td>
+            <td width='60%'>Add host to the host collection</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_collections/remove_hosts.zh_CN.html'>PUT /katello/api/host_collections/:id/remove_hosts</a>
+            </td>
+            <td width='60%'>Remove hosts from the host collection</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_collections/destroy.zh_CN.html'>DELETE /katello/api/host_collections/:id</a>
+            </td>
+            <td width='60%'>消除主机集合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_collections/copy.zh_CN.html'>POST /katello/api/host_collections/:id/copy</a>
+            </td>
+            <td width='60%'>复制主机集合</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/host_errata.zh_CN.html'>
+      Host errata
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_errata/index.zh_CN.html'>GET /api/hosts/:host_id/errata</a>
+            </td>
+            <td width='60%'>列出可用于该内容主机的勘误</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_errata/apply.zh_CN.html'>PUT /api/hosts/:host_id/errata/apply</a>
+            </td>
+            <td width='60%'>为安装调度勘误</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_errata/show.zh_CN.html'>GET /api/hosts/:host_id/errata/:id</a>
+            </td>
+            <td width='60%'>Retrieve a single errata for a host</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_errata/applicability.zh_CN.html'>PUT /api/hosts/:host_id/errata/applicability</a>
+            </td>
+            <td width='60%'>Force regenerate applicability.</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/host_packages.zh_CN.html'>
+      Host packages
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_packages/index.zh_CN.html'>GET /api/hosts/:host_id/packages</a>
+            </td>
+            <td width='60%'>List packages installed on the host</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_packages/install.zh_CN.html'>PUT /api/hosts/:host_id/packages/install</a>
+            </td>
+            <td width='60%'>远程安装软件包</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_packages/upgrade.zh_CN.html'>PUT /api/hosts/:host_id/packages/upgrade</a>
+            </td>
+            <td width='60%'>远程更新软件包</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_packages/upgrade_all.zh_CN.html'>PUT /api/hosts/:host_id/packages/upgrade_all</a>
+            </td>
+            <td width='60%'>远程更新软件包</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_packages/remove.zh_CN.html'>PUT /api/hosts/:host_id/packages/remove</a>
+            </td>
+            <td width='60%'>远程卸载软件包</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/host_subscriptions.zh_CN.html'>
+      Host subscriptions
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_subscriptions/index.zh_CN.html'>GET /api/hosts/:host_id/subscriptions</a>
+            </td>
+            <td width='60%'>List a host&#39;s subscriptions</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_subscriptions/auto_attach.zh_CN.html'>PUT /api/hosts/:host_id/subscriptions/auto_attach</a>
+            </td>
+            <td width='60%'>Trigger an auto-attach of subscriptions</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_subscriptions/events.zh_CN.html'>GET /api/hosts/:host_id/subscriptions/events</a>
+            </td>
+            <td width='60%'>List subscription events for the host</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_subscriptions/destroy.zh_CN.html'>DELETE /api/hosts/:host_id/subscriptions</a>
+            </td>
+            <td width='60%'>Unregister the host as a subscription consumer</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_subscriptions/create.zh_CN.html'>POST /api/hosts/subscriptions</a>
+            </td>
+            <td width='60%'>Register a host with subscription and information.</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_subscriptions/remove_subscriptions.zh_CN.html'>PUT /api/hosts/:host_id/subscriptions/remove_subscriptions</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_subscriptions/add_subscriptions.zh_CN.html'>PUT /api/hosts/:host_id/subscriptions/add_subscriptions</a>
+            </td>
+            <td width='60%'>Add a subscription to a host</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_subscriptions/content_override.zh_CN.html'>PUT /api/hosts/:host_id/subscriptions/content_override</a>
+            </td>
+            <td width='60%'>Set content overrides for the host</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_subscriptions/product_content.zh_CN.html'>GET /api/hosts/:host_id/subscriptions/product_content</a>
+            </td>
+            <td width='60%'>Get content and overrides for the host</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_subscriptions/available_release_versions.zh_CN.html'>GET /api/hosts/:host_id/subscriptions/available_release_versions</a>
+            </td>
+            <td width='60%'>显示内容主机的可用发行本</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/host_tracer.zh_CN.html'>
+      Host tracer
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/host_tracer/index.zh_CN.html'>GET /api/hosts/:host_id/tracer</a>
+            </td>
+            <td width='60%'>List servises that need restarting on the host</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/hostgroup_classes.zh_CN.html'>
+      Hostgroup classes
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hostgroup_classes/index.zh_CN.html'>GET /api/hostgroups/:hostgroup_id/puppetclass_ids</a>
+            </td>
+            <td width='60%'>列出主机组的所有 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hostgroup_classes/create.zh_CN.html'>POST /api/hostgroups/:hostgroup_id/puppetclass_ids</a>
+            </td>
+            <td width='60%'>在主机组中添加 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hostgroup_classes/destroy.zh_CN.html'>DELETE /api/hostgroups/:hostgroup_id/puppetclass_ids/:id</a>
+            </td>
+            <td width='60%'>删除主机组的 Puppet 类别</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/hostgroups.zh_CN.html'>
+      Hostgroups
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hostgroups/index.zh_CN.html'>GET /api/hostgroups</a>
+            </td>
+            <td width='60%'>列出所有主机组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hostgroups/index.zh_CN.html'>GET /api/puppetclasses/:puppetclass_id/hostgroups</a>
+            </td>
+            <td width='60%'>列出 Puppet 类别的所有主机组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hostgroups/index.zh_CN.html'>GET /api/locations/:location_id/hostgroups</a>
+            </td>
+            <td width='60%'>列出每个位置的所有主机组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hostgroups/index.zh_CN.html'>GET /api/organizations/:organization_id/hostgroups</a>
+            </td>
+            <td width='60%'>列出每个机构的所有主机组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hostgroups/show.zh_CN.html'>GET /api/hostgroups/:id</a>
+            </td>
+            <td width='60%'>显示主机组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hostgroups/create.zh_CN.html'>POST /api/hostgroups</a>
+            </td>
+            <td width='60%'>创建主机组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hostgroups/update.zh_CN.html'>PUT /api/hostgroups/:id</a>
+            </td>
+            <td width='60%'>更新主机组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hostgroups/destroy.zh_CN.html'>DELETE /api/hostgroups/:id</a>
+            </td>
+            <td width='60%'>删除主机组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hostgroups/clone.zh_CN.html'>POST /api/hostgroups/:id/clone</a>
+            </td>
+            <td width='60%'>克隆主机组</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/hosts.zh_CN.html'>
+      Hosts
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/index.zh_CN.html'>GET /api/hosts</a>
+            </td>
+            <td width='60%'>列出所有主机</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/index.zh_CN.html'>GET /api/hostgroups/:hostgroup_id/hosts</a>
+            </td>
+            <td width='60%'>列出主机组中的所有主机 </td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/index.zh_CN.html'>GET /api/locations/:location_id/hosts</a>
+            </td>
+            <td width='60%'>列出每个位置的主机</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/index.zh_CN.html'>GET /api/organizations/:organization_id/hosts</a>
+            </td>
+            <td width='60%'>列出每个机构的主机</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/index.zh_CN.html'>GET /api/environments/:environment_id/hosts</a>
+            </td>
+            <td width='60%'>列出每个位置的主机</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/show.zh_CN.html'>GET /api/hosts/:id</a>
+            </td>
+            <td width='60%'>显示主机</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/create.zh_CN.html'>POST /api/hosts</a>
+            </td>
+            <td width='60%'>创建主机</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/update.zh_CN.html'>PUT /api/hosts/:id</a>
+            </td>
+            <td width='60%'>更新主机</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/destroy.zh_CN.html'>DELETE /api/hosts/:id</a>
+            </td>
+            <td width='60%'>删除主机</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/enc.zh_CN.html'>GET /api/hosts/:id/enc</a>
+            </td>
+            <td width='60%'>Get ENC values of host</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/status.zh_CN.html'>GET /api/hosts/:id/status</a>
+            </td>
+            <td width='60%'>获取主机配置状态</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/get_status.zh_CN.html'>GET /api/hosts/:id/status/:type</a>
+            </td>
+            <td width='60%'>获取主机状态</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/vm_compute_attributes.zh_CN.html'>GET /api/hosts/:id/vm_compute_attributes</a>
+            </td>
+            <td width='60%'>获取主机 vm 属性</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/puppetrun.zh_CN.html'>PUT /api/hosts/:id/puppetrun</a>
+            </td>
+            <td width='60%'>强制在该主机中运行 Puppet 代理</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/disassociate.zh_CN.html'>PUT /api/hosts/:id/disassociate</a>
+            </td>
+            <td width='60%'>取消该主机与 VM 的关联</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/power.zh_CN.html'>PUT /api/hosts/:id/power</a>
+            </td>
+            <td width='60%'>在主机中运行电源操作</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/boot.zh_CN.html'>PUT /api/hosts/:id/boot</a>
+            </td>
+            <td width='60%'>使用指定设备引导主机</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/facts.zh_CN.html'>POST /api/hosts/facts</a>
+            </td>
+            <td width='60%'>上传主机的系统详情，如需要，请创建主机。</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/rebuild_config.zh_CN.html'>PUT /api/hosts/:id/rebuild_config</a>
+            </td>
+            <td width='60%'>重建业务流程配置</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/template.zh_CN.html'>GET /api/hosts/:id/template/:kind</a>
+            </td>
+            <td width='60%'>预览呈现的预配模板内容</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts/host_collections.zh_CN.html'>PUT /api/hosts/:host_id/host_collections</a>
+            </td>
+            <td width='60%'>Alter a hosts host collections</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/hosts_bulk_actions.zh_CN.html'>
+      Hosts bulk actions
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts_bulk_actions/bulk_add_host_collections.zh_CN.html'>PUT /api/hosts/bulk/add_host_collections</a>
+            </td>
+            <td width='60%'>Add one or more host collections to one or more hosts</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts_bulk_actions/bulk_remove_host_collections.zh_CN.html'>PUT /api/hosts/bulk/remove_host_collections</a>
+            </td>
+            <td width='60%'>Remove one or more host collections from one or more hosts</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts_bulk_actions/installable_errata.zh_CN.html'>POST /api/hosts/bulk/applicable_errata</a>
+            </td>
+            <td width='60%'>Fetch applicable errata for a host.</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts_bulk_actions/install_content.zh_CN.html'>PUT /api/hosts/bulk/install_content</a>
+            </td>
+            <td width='60%'>Install content on one or more hosts</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts_bulk_actions/update_content.zh_CN.html'>PUT /api/hosts/bulk/update_content</a>
+            </td>
+            <td width='60%'>Update content on one or more hosts</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts_bulk_actions/remove_content.zh_CN.html'>PUT /api/hosts/bulk/remove_content</a>
+            </td>
+            <td width='60%'>Remove content on one or more hosts</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts_bulk_actions/destroy_hosts.zh_CN.html'>PUT /api/hosts/bulk/destroy</a>
+            </td>
+            <td width='60%'>Destroy one or more hosts</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts_bulk_actions/remove_subscriptions.zh_CN.html'>PUT /api/hosts/bulk/subscriptions/remove_subscriptions</a>
+            </td>
+            <td width='60%'>Remove subscriptions from one or more hosts</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts_bulk_actions/add_subscriptions.zh_CN.html'>PUT /api/hosts/bulk/subscriptions/add_subscriptions</a>
+            </td>
+            <td width='60%'>Add subscriptions to one or more hosts</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts_bulk_actions/auto_attach.zh_CN.html'>PUT /api/hosts/bulk/subscriptions/auto_attach</a>
+            </td>
+            <td width='60%'>Trigger an auto-attach of subscriptions on one or more hosts</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts_bulk_actions/environment_content_view.zh_CN.html'>PUT /api/hosts/bulk/environment_content_view</a>
+            </td>
+            <td width='60%'>Assign the environment and content view to one or more hosts</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/hosts_bulk_actions/available_incremental_updates.zh_CN.html'>POST /api/hosts/bulk/available_incremental_updates</a>
+            </td>
+            <td width='60%'>Given a set of hosts and errata, lists the content view versions and environments that need updating.</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/images.zh_CN.html'>
+      Images
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/images/index.zh_CN.html'>GET /api/compute_resources/:compute_resource_id/images</a>
+            </td>
+            <td width='60%'>列出计算资源的所有映像</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/images/index.zh_CN.html'>GET /api/operatingsystems/:operatingsystem_id/images</a>
+            </td>
+            <td width='60%'>列出操作系统的所有映像</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/images/index.zh_CN.html'>GET /api/architectures/:architecture_id/images</a>
+            </td>
+            <td width='60%'>列出架构的所有映像</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/images/show.zh_CN.html'>GET /api/compute_resources/:compute_resource_id/images/:id</a>
+            </td>
+            <td width='60%'>显示映像</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/images/show.zh_CN.html'>GET /api/operatingsystems/:operatingsystem_id/images/:id</a>
+            </td>
+            <td width='60%'>显示映像</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/images/show.zh_CN.html'>GET /api/architectures/:architecture_id/images/:id</a>
+            </td>
+            <td width='60%'>显示映像</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/images/create.zh_CN.html'>POST /api/compute_resources/:compute_resource_id/images</a>
+            </td>
+            <td width='60%'>创建映像</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/images/update.zh_CN.html'>PUT /api/compute_resources/:compute_resource_id/images/:id</a>
+            </td>
+            <td width='60%'>更新映像</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/images/destroy.zh_CN.html'>DELETE /api/compute_resources/:compute_resource_id/images/:id</a>
+            </td>
+            <td width='60%'>删除映像</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/interfaces.zh_CN.html'>
+      Interfaces
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/interfaces/index.zh_CN.html'>GET /api/hosts/:host_id/interfaces</a>
+            </td>
+            <td width='60%'>列出主机的所有接口</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/interfaces/index.zh_CN.html'>GET /api/domains/:domain_id/interfaces</a>
+            </td>
+            <td width='60%'>列出域的所有接口</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/interfaces/index.zh_CN.html'>GET /api/subnets/:subnet_id/interfaces</a>
+            </td>
+            <td width='60%'>列出子网的所有接口</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/interfaces/show.zh_CN.html'>GET /api/hosts/:host_id/interfaces/:id</a>
+            </td>
+            <td width='60%'>显示主机接口</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/interfaces/create.zh_CN.html'>POST /api/hosts/:host_id/interfaces</a>
+            </td>
+            <td width='60%'>在主机中创建接口</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/interfaces/update.zh_CN.html'>PUT /api/hosts/:host_id/interfaces/:id</a>
+            </td>
+            <td width='60%'>更新主机接口</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/interfaces/destroy.zh_CN.html'>DELETE /api/hosts/:host_id/interfaces/:id</a>
+            </td>
+            <td width='60%'>删除主机接口</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/lifecycle_environments.zh_CN.html'>
+      Lifecycle environments
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/lifecycle_environments/index.zh_CN.html'>GET /katello/api/environments</a>
+            </td>
+            <td width='60%'>列出机构中的发行商</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/lifecycle_environments/index.zh_CN.html'>GET /katello/api/organizations/:organization_id/environments</a>
+            </td>
+            <td width='60%'>列出机构中的发行商</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/lifecycle_environments/show.zh_CN.html'>GET /katello/api/environments/:id</a>
+            </td>
+            <td width='60%'>显示环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/lifecycle_environments/show.zh_CN.html'>GET /katello/api/organizations/:organization_id/environments/:environment_id</a>
+            </td>
+            <td width='60%'>显示环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/lifecycle_environments/create.zh_CN.html'>POST /katello/api/environments</a>
+            </td>
+            <td width='60%'>创建环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/lifecycle_environments/create.zh_CN.html'>POST /katello/api/organizations/:organization_id/environments</a>
+            </td>
+            <td width='60%'>在机构中创建环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/lifecycle_environments/update.zh_CN.html'>PUT /katello/api/environments/:id</a>
+            </td>
+            <td width='60%'>更新环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/lifecycle_environments/update.zh_CN.html'>PUT /katello/api/organizations/:organization_id/environments/:id</a>
+            </td>
+            <td width='60%'>更新机构中的环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/lifecycle_environments/destroy.zh_CN.html'>DELETE /katello/api/environments/:id</a>
+            </td>
+            <td width='60%'>消除环境</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/lifecycle_environments/destroy.zh_CN.html'>DELETE /katello/api/organizations/:organization_id/environments/:id</a>
+            </td>
+            <td width='60%'>消除机构中的环境 </td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/lifecycle_environments/paths.zh_CN.html'>GET /katello/api/organizations/:organization_id/environments/paths</a>
+            </td>
+            <td width='60%'>列出环境路径</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/locations.zh_CN.html'>
+      Locations
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/locations/index.zh_CN.html'>GET /api/locations</a>
+            </td>
+            <td width='60%'>List all locations</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/locations/show.zh_CN.html'>GET /api/locations/:id</a>
+            </td>
+            <td width='60%'>Show a location</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/locations/create.zh_CN.html'>POST /api/locations</a>
+            </td>
+            <td width='60%'>Create a location</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/locations/update.zh_CN.html'>PUT /api/locations/:id</a>
+            </td>
+            <td width='60%'>Update a location</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/locations/destroy.zh_CN.html'>DELETE /api/locations/:id</a>
+            </td>
+            <td width='60%'>Delete a location</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/mail_notifications.zh_CN.html'>
+      Mail notifications
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/mail_notifications/index.zh_CN.html'>GET /api/mail_notifications</a>
+            </td>
+            <td width='60%'>电子邮件通知列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/mail_notifications/show.zh_CN.html'>GET /api/mail_notifications/:id</a>
+            </td>
+            <td width='60%'>显示电子邮件通知</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/media.zh_CN.html'>
+      Media
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/media/index.zh_CN.html'>GET /api/media</a>
+            </td>
+            <td width='60%'>列出所有安装介质</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/media/index.zh_CN.html'>GET /api/operatingsystems/:operatingsystem_id/media</a>
+            </td>
+            <td width='60%'>列出操作系统的所有介质</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/media/index.zh_CN.html'>GET /api/locations/:location_id/media</a>
+            </td>
+            <td width='60%'>列出每个位置的所有介质</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/media/index.zh_CN.html'>GET /api/organizations/:organization_id/media</a>
+            </td>
+            <td width='60%'>列出每个机构的所有介质</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/media/show.zh_CN.html'>GET /api/media/:id</a>
+            </td>
+            <td width='60%'>显示媒体</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/media/create.zh_CN.html'>POST /api/media</a>
+            </td>
+            <td width='60%'>创建媒体</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/media/update.zh_CN.html'>PUT /api/media/:id</a>
+            </td>
+            <td width='60%'>更新媒体</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/media/destroy.zh_CN.html'>DELETE /api/media/:id</a>
+            </td>
+            <td width='60%'>删除媒体</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/models.zh_CN.html'>
+      Models
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/models/index.zh_CN.html'>GET /api/models</a>
+            </td>
+            <td width='60%'>列出所有硬件型号</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/models/show.zh_CN.html'>GET /api/models/:id</a>
+            </td>
+            <td width='60%'>显示硬件型号</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/models/create.zh_CN.html'>POST /api/models</a>
+            </td>
+            <td width='60%'>创建硬件型号</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/models/update.zh_CN.html'>PUT /api/models/:id</a>
+            </td>
+            <td width='60%'>更新硬件型号</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/models/destroy.zh_CN.html'>DELETE /api/models/:id</a>
+            </td>
+            <td width='60%'>删除硬件型号</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/operatingsystems.zh_CN.html'>
+      Operating systems
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/operatingsystems/index.zh_CN.html'>GET /api/operatingsystems</a>
+            </td>
+            <td width='60%'>列出所有操作系统</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/operatingsystems/index.zh_CN.html'>GET /api/architectures/:architecture_id/operatingsystems</a>
+            </td>
+            <td width='60%'>列出嵌套架构的所有操作系统</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/operatingsystems/index.zh_CN.html'>GET /api/media/:medium_id/operatingsystems</a>
+            </td>
+            <td width='60%'>列出嵌套媒体的所有操作系统</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/operatingsystems/index.zh_CN.html'>GET /api/ptables/:ptable_id/operatingsystems</a>
+            </td>
+            <td width='60%'>列出嵌套分区表的所有操作系统</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/operatingsystems/index.zh_CN.html'>GET /api/config_templates/:config_template_id/operatingsystems</a>
+            </td>
+            <td width='60%'>列出嵌套预配模板的所有操作系统</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/operatingsystems/index.zh_CN.html'>GET /api/provisioning_templates/:provisioning_template_id/operatingsystems</a>
+            </td>
+            <td width='60%'>列出嵌套预配模板的所有操作系统</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/operatingsystems/show.zh_CN.html'>GET /api/operatingsystems/:id</a>
+            </td>
+            <td width='60%'>显示操作系统</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/operatingsystems/create.zh_CN.html'>POST /api/operatingsystems</a>
+            </td>
+            <td width='60%'>创建操作系统</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/operatingsystems/update.zh_CN.html'>PUT /api/operatingsystems/:id</a>
+            </td>
+            <td width='60%'>更新操作系统</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/operatingsystems/destroy.zh_CN.html'>DELETE /api/operatingsystems/:id</a>
+            </td>
+            <td width='60%'>删除操作系统</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/operatingsystems/bootfiles.zh_CN.html'>GET /api/operatingsystems/:id/bootfiles</a>
+            </td>
+            <td width='60%'>列出操作系统的引导文件</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/organizations.zh_CN.html'>
+      Organizations
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/organizations/index.zh_CN.html'>GET /katello/api/organizations</a>
+            </td>
+            <td width='60%'>列出所有机构</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/organizations/show.zh_CN.html'>GET /katello/api/organizations/:id</a>
+            </td>
+            <td width='60%'>显示机构</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/organizations/create.zh_CN.html'>POST /katello/api/organizations</a>
+            </td>
+            <td width='60%'>创建机构</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/organizations/update.zh_CN.html'>PUT /katello/api/organizations/:id</a>
+            </td>
+            <td width='60%'>更新机构</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/organizations/destroy.zh_CN.html'>DELETE /katello/api/organizations/:id</a>
+            </td>
+            <td width='60%'>删除机构</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/organizations/repo_discover.zh_CN.html'>PUT /katello/api/organizations/:id/repo_discover</a>
+            </td>
+            <td width='60%'>查找库</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/organizations/cancel_repo_discover.zh_CN.html'>PUT /katello/api/organizations/:label/cancel_repo_discover</a>
+            </td>
+            <td width='60%'>取消查找库</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/organizations/download_debug_certificate.zh_CN.html'>GET /katello/api/organizations/:label/download_debug_certificate</a>
+            </td>
+            <td width='60%'>下载 debug 证书</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/organizations/autoattach_subscriptions.zh_CN.html'>POST /katello/api/organizations/:id/autoattach_subscriptions</a>
+                <code>DEPRECATED</code>
+            </td>
+            <td width='60%'>Auto-attach available subscriptions to all hosts within an organization. Asynchronous operation.</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/organizations/redhat_provider.zh_CN.html'>GET /katello/api/organizations/:id/redhat_provider</a>
+            </td>
+            <td width='60%'>列出所有：resource_id</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/os_default_templates.zh_CN.html'>
+      Os default templates
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/os_default_templates/index.zh_CN.html'>GET /api/operatingsystems/:operatingsystem_id/os_default_templates</a>
+            </td>
+            <td width='60%'>列出操作系统的默认模板集合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/os_default_templates/index.zh_CN.html'>GET /api/config_templates/:config_template_id/os_default_templates</a>
+            </td>
+            <td width='60%'>列出将这个模板设定为默认模板的操作系统</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/os_default_templates/index.zh_CN.html'>GET /api/provisioning_templates/:provisioning_template_id/os_default_templates</a>
+            </td>
+            <td width='60%'>列出将这个模板设定为默认模板的操作系统</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/os_default_templates/show.zh_CN.html'>GET /api/operatingsystems/:operatingsystem_id/os_default_templates/:id</a>
+            </td>
+            <td width='60%'>显示操作系统的默认模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/os_default_templates/create.zh_CN.html'>POST /api/operatingsystems/:operatingsystem_id/os_default_templates</a>
+            </td>
+            <td width='60%'>为操作系统生成默认模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/os_default_templates/update.zh_CN.html'>PUT /api/operatingsystems/:operatingsystem_id/os_default_templates/:id</a>
+            </td>
+            <td width='60%'>更新操作系统的默认模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/os_default_templates/destroy.zh_CN.html'>DELETE /api/operatingsystems/:operatingsystem_id/os_default_templates/:id</a>
+            </td>
+            <td width='60%'>删除选择系统的默认模板组合</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/ostree_branches.zh_CN.html'>
+      Ostree branches
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ostree_branches/index.zh_CN.html'>GET /katello/api/ostree_branches</a>
+            </td>
+            <td width='60%'>List ostree_branches</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ostree_branches/index.zh_CN.html'>GET /katello/api/content_views/:content_view_id/filters/:filter_id/ostree_branches</a>
+            </td>
+            <td width='60%'>List ostree_branches</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ostree_branches/index.zh_CN.html'>GET /katello/api/content_view_filters/:content_view_filter_id/ostree_branches</a>
+            </td>
+            <td width='60%'>List ostree_branches</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ostree_branches/index.zh_CN.html'>GET /katello/api/repositories/:repository_id/ostree_branches</a>
+            </td>
+            <td width='60%'>List ostree_branches</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ostree_branches/show.zh_CN.html'>GET /katello/api/ostree_branches/:id</a>
+            </td>
+            <td width='60%'>Show an ostree branch</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ostree_branches/show.zh_CN.html'>GET /katello/api/repositories/:repository_id/ostree_branches/:id</a>
+            </td>
+            <td width='60%'>Show an ostree branch</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ostree_branches/compare.zh_CN.html'>GET /katello/api/compare</a>
+            </td>
+            <td width='60%'>List ostree_branches</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/override_values.zh_CN.html'>
+      Override values
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/override_values/index.zh_CN.html'>GET /api/smart_variables/:smart_variable_id/override_values</a>
+            </td>
+            <td width='60%'>具体智能变量替代值列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/override_values/index.zh_CN.html'>GET /api/smart_class_parameters/:smart_class_parameter_id/override_values</a>
+            </td>
+            <td width='60%'>具体智能分类参数替代值列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/override_values/show.zh_CN.html'>GET /api/smart_variables/:smart_variable_id/override_values/:id</a>
+            </td>
+            <td width='60%'>显示具体智能变量的替代值</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/override_values/show.zh_CN.html'>GET /api/smart_class_parameters/:smart_class_parameter_id/override_values/:id</a>
+            </td>
+            <td width='60%'>显示具体智能类别参数的替代值</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/override_values/create.zh_CN.html'>POST /api/smart_variables/:smart_variable_id/override_values</a>
+            </td>
+            <td width='60%'>为具体智能变量生创建替代值</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/override_values/create.zh_CN.html'>POST /api/smart_class_parameters/:smart_class_parameter_id/override_values</a>
+            </td>
+            <td width='60%'>为具体智能类别参数创建替代值</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/override_values/update.zh_CN.html'>PUT /api/smart_variables/:smart_variable_id/override_values/:id</a>
+            </td>
+            <td width='60%'>更新具体智能变量的替代值</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/override_values/update.zh_CN.html'>PUT /api/smart_class_parameters/:smart_class_parameter_id/override_values/:id</a>
+            </td>
+            <td width='60%'>更新具体智能类别参数的替代值</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/override_values/destroy.zh_CN.html'>DELETE /api/smart_variables/:smart_variable_id/override_values/:id</a>
+            </td>
+            <td width='60%'>为具体智能变量删除覆盖值</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/override_values/destroy.zh_CN.html'>DELETE /api/smart_class_parameters/:smart_class_parameter_id/override_values/:id</a>
+            </td>
+            <td width='60%'>删除具体智能类别参数替代值</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/package_groups.zh_CN.html'>
+      Package groups
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/package_groups/index.zh_CN.html'>GET /katello/api/package_groups</a>
+            </td>
+            <td width='60%'>List package_groups</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/package_groups/index.zh_CN.html'>GET /katello/api/content_views/:content_view_id/filters/:filter_id/package_groups</a>
+            </td>
+            <td width='60%'>List package_groups</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/package_groups/index.zh_CN.html'>GET /katello/api/content_view_filters/:content_view_filter_id/package_groups</a>
+            </td>
+            <td width='60%'>List package_groups</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/package_groups/index.zh_CN.html'>GET /katello/api/repositories/:repository_id/package_groups</a>
+            </td>
+            <td width='60%'>List package_groups</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/package_groups/show.zh_CN.html'>GET /katello/api/package_groups/:id</a>
+            </td>
+            <td width='60%'>Show a package group</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/package_groups/show.zh_CN.html'>GET /katello/api/repositories/:repository_id/package_groups/:id</a>
+            </td>
+            <td width='60%'>Show a package group</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/package_groups/compare.zh_CN.html'>GET /katello/api/compare</a>
+            </td>
+            <td width='60%'>List package_groups</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/packages.zh_CN.html'>
+      Packages
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/packages/index.zh_CN.html'>GET /katello/api/packages</a>
+            </td>
+            <td width='60%'>List packages</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/packages/index.zh_CN.html'>GET /katello/api/content_views/:content_view_id/filters/:filter_id/:resource_id</a>
+            </td>
+            <td width='60%'>列出：resource_id</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/packages/index.zh_CN.html'>GET /katello/api/content_view_filters/:content_view_filter_id/:resource_id</a>
+            </td>
+            <td width='60%'>列出：resource_id</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/packages/index.zh_CN.html'>GET /katello/api/repositories/:repository_id/:resource_id</a>
+            </td>
+            <td width='60%'>列出：resource_id</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/packages/show.zh_CN.html'>GET /katello/api/packages/:id</a>
+            </td>
+            <td width='60%'>Show a package</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/packages/show.zh_CN.html'>GET /katello/api/repositories/:repository_id/packages/:id</a>
+            </td>
+            <td width='60%'>Show a package</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/packages/compare.zh_CN.html'>GET /katello/api/compare</a>
+            </td>
+            <td width='60%'>List packages</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/parameters.zh_CN.html'>
+      Parameters
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/index.zh_CN.html'>GET /api/hosts/:host_id/parameters</a>
+            </td>
+            <td width='60%'>列出主机的所有参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/index.zh_CN.html'>GET /api/hostgroups/:hostgroup_id/parameters</a>
+            </td>
+            <td width='60%'>列出主机组中的所有参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/index.zh_CN.html'>GET /api/domains/:domain_id/parameters</a>
+            </td>
+            <td width='60%'>列出域的所有参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/index.zh_CN.html'>GET /api/operatingsystems/:operatingsystem_id/parameters</a>
+            </td>
+            <td width='60%'>列出操作系统的所有参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/index.zh_CN.html'>GET /api/locations/:location_id/parameters</a>
+            </td>
+            <td width='60%'>列出位置的所有参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/index.zh_CN.html'>GET /api/organizations/:organization_id/parameters</a>
+            </td>
+            <td width='60%'>列出机构中的所有参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/index.zh_CN.html'>GET /api/subnets/:subnet_id/parameters</a>
+            </td>
+            <td width='60%'>List all parameters for a subnet</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/show.zh_CN.html'>GET /api/hosts/:host_id/parameters/:id</a>
+            </td>
+            <td width='60%'>显示主机的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/show.zh_CN.html'>GET /api/hostgroups/:hostgroup_id/parameters/:id</a>
+            </td>
+            <td width='60%'>显示主机组的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/show.zh_CN.html'>GET /api/domains/:domain_id/parameters/:id</a>
+            </td>
+            <td width='60%'>显示域的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/show.zh_CN.html'>GET /api/operatingsystems/:operatingsystem_id/parameters/:id</a>
+            </td>
+            <td width='60%'>显示操作系统的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/show.zh_CN.html'>GET /api/locations/:location_id/parameters/:id</a>
+            </td>
+            <td width='60%'>显示位置的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/show.zh_CN.html'>GET /api/organizations/:organization_id/parameters/:id</a>
+            </td>
+            <td width='60%'>显示机构的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/show.zh_CN.html'>GET /api/subnets/:subnet_id/parameters/:id</a>
+            </td>
+            <td width='60%'>Show a nested parameter for a subnet</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/create.zh_CN.html'>POST /api/hosts/:host_id/parameters</a>
+            </td>
+            <td width='60%'>为主机生成嵌入的参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/create.zh_CN.html'>POST /api/hostgroups/:hostgroup_id/parameters</a>
+            </td>
+            <td width='60%'>为主机组创建成嵌入的参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/create.zh_CN.html'>POST /api/domains/:domain_id/parameters</a>
+            </td>
+            <td width='60%'>为域创建嵌入的参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/create.zh_CN.html'>POST /api/operatingsystems/:operatingsystem_id/parameters</a>
+            </td>
+            <td width='60%'>为操作系统创建嵌入的参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/create.zh_CN.html'>POST /api/locations/:location_id/parameters</a>
+            </td>
+            <td width='60%'>为位置创建嵌入的参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/create.zh_CN.html'>POST /api/organizations/:organization_id/parameters</a>
+            </td>
+            <td width='60%'>为机构创建嵌入的参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/create.zh_CN.html'>POST /api/subnets/:subnet_id/parameters</a>
+            </td>
+            <td width='60%'>Create a nested parameter for a subnet</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/update.zh_CN.html'>PUT /api/hosts/:host_id/parameters/:id</a>
+            </td>
+            <td width='60%'>更新主机的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/update.zh_CN.html'>PUT /api/hostgroups/:hostgroup_id/parameters/:id</a>
+            </td>
+            <td width='60%'>更新主机组的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/update.zh_CN.html'>PUT /api/domains/:domain_id/parameters/:id</a>
+            </td>
+            <td width='60%'>更新域的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/update.zh_CN.html'>PUT /api/operatingsystems/:operatingsystem_id/parameters/:id</a>
+            </td>
+            <td width='60%'>更新操作系统的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/update.zh_CN.html'>PUT /api/locations/:location_id/parameters/:id</a>
+            </td>
+            <td width='60%'>更新位置的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/update.zh_CN.html'>PUT /api/organizations/:organization_id/parameters/:id</a>
+            </td>
+            <td width='60%'>更新机构的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/update.zh_CN.html'>PUT /api/subnets/:subnet_id/parameters/:id</a>
+            </td>
+            <td width='60%'>Update a nested parameter for a subnet</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/destroy.zh_CN.html'>DELETE /api/hosts/:host_id/parameters/:id</a>
+            </td>
+            <td width='60%'>删除主机的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/destroy.zh_CN.html'>DELETE /api/hostgroups/:hostgroup_id/parameters/:id</a>
+            </td>
+            <td width='60%'>删除主机组的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/destroy.zh_CN.html'>DELETE /api/domains/:domain_id/parameters/:id</a>
+            </td>
+            <td width='60%'>删除域的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/destroy.zh_CN.html'>DELETE /api/operatingsystems/:operatingsystem_id/parameters/:id</a>
+            </td>
+            <td width='60%'>删除操作系统的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/destroy.zh_CN.html'>DELETE /api/locations/:location_id/parameters/:id</a>
+            </td>
+            <td width='60%'>删除位置的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/destroy.zh_CN.html'>DELETE /api/organizations/:organization_id/parameters/:id</a>
+            </td>
+            <td width='60%'>删除机构的嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/destroy.zh_CN.html'>DELETE /api/subnets/:subnet_id/parameters/:id</a>
+            </td>
+            <td width='60%'>Delete a nested parameter for a subnet</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/reset.zh_CN.html'>DELETE /api/hosts/:host_id/parameters</a>
+            </td>
+            <td width='60%'>删除主机的所有嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/reset.zh_CN.html'>DELETE /api/hostgroups/:hostgroup_id/parameters</a>
+            </td>
+            <td width='60%'>删除主机组的所有嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/reset.zh_CN.html'>DELETE /api/domains/:domain_id/parameters</a>
+            </td>
+            <td width='60%'>删除域的所有嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/reset.zh_CN.html'>DELETE /api/operatingsystems/:operatingsystem_id/parameters</a>
+            </td>
+            <td width='60%'>删除操作系统的所有嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/reset.zh_CN.html'>DELETE /api/locations/:location_id/parameters</a>
+            </td>
+            <td width='60%'>删除位置的所有嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/reset.zh_CN.html'>DELETE /api/organizations/:organization_id/parameters</a>
+            </td>
+            <td width='60%'>删除域的所有嵌入参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/parameters/reset.zh_CN.html'>DELETE /api/subnets/:subnet_id/parameters</a>
+            </td>
+            <td width='60%'>Delete all nested parameters for a subnet</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/permissions.zh_CN.html'>
+      Permissions
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/permissions/index.zh_CN.html'>GET /api/permissions</a>
+            </td>
+            <td width='60%'>列出所有权限</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/permissions/show.zh_CN.html'>GET /api/permissions/:id</a>
+            </td>
+            <td width='60%'>显示权限</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/permissions/resource_types.zh_CN.html'>GET /api/permissions/resource_types</a>
+            </td>
+            <td width='60%'>列出可用资源类型。</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/ping.zh_CN.html'>
+      Ping
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ping/index.zh_CN.html'>GET /katello/api/ping</a>
+            </td>
+            <td width='60%'>显示系统状态及其子部分</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ping/server_status.zh_CN.html'>GET /katello/api/status</a>
+            </td>
+            <td width='60%'>显示版本信息</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/plugins.zh_CN.html'>
+      Plugins
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/plugins/index.zh_CN.html'>GET /api/plugins</a>
+            </td>
+            <td width='60%'>列出已安装插件</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/products.zh_CN.html'>
+      Products
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products/index.zh_CN.html'>GET /katello/api/products</a>
+            </td>
+            <td width='60%'>列出产品</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products/index.zh_CN.html'>GET /katello/api/subscriptions/:subscription_id/products</a>
+            </td>
+            <td width='60%'>订阅中的订阅产品列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products/index.zh_CN.html'>GET /katello/api/activation_keys/:activation_key_id/products</a>
+            </td>
+            <td width='60%'>激活码中的订阅产品列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products/index.zh_CN.html'>GET /katello/api/organizations/:organization_id/products</a>
+            </td>
+            <td width='60%'>机构中的产品列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products/index.zh_CN.html'>GET /katello/api/sync_plans/:sync_plan_id/products</a>
+            </td>
+            <td width='60%'>List of Products for sync plan</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products/index.zh_CN.html'>GET /katello/api/organizations/:organization_id/sync_plans/:sync_plan_id/products</a>
+            </td>
+            <td width='60%'>List of Products for sync plan</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products/create.zh_CN.html'>POST /katello/api/products</a>
+            </td>
+            <td width='60%'>创建产品</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products/show.zh_CN.html'>GET /katello/api/products/:id</a>
+            </td>
+            <td width='60%'>显示产品</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products/update.zh_CN.html'>PUT /katello/api/products/:id</a>
+            </td>
+            <td width='60%'>更新产品</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products/destroy.zh_CN.html'>DELETE /katello/api/products/:id</a>
+            </td>
+            <td width='60%'>消除产品</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products/sync.zh_CN.html'>POST /katello/api/products/:id/sync</a>
+            </td>
+            <td width='60%'>Sync all repositories for a product</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/products_bulk_actions.zh_CN.html'>
+      Products bulk actions
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products_bulk_actions/destroy_products.zh_CN.html'>PUT /katello/api/products/bulk/destroy</a>
+            </td>
+            <td width='60%'>消除一个或多个产品</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products_bulk_actions/sync_products.zh_CN.html'>PUT /katello/api/products/bulk/sync</a>
+            </td>
+            <td width='60%'>同步一个或多个产品</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/products_bulk_actions/update_sync_plans.zh_CN.html'>PUT /katello/api/products/bulk/sync_plan</a>
+            </td>
+            <td width='60%'>同步一个或多个产品</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/provisioning_templates.zh_CN.html'>
+      Provisioning templates
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/provisioning_templates/index.zh_CN.html'>GET /api/provisioning_templates</a>
+            </td>
+            <td width='60%'>列出预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/provisioning_templates/index.zh_CN.html'>GET /api/operatingsystems/:operatingsystem_id/provisioning_templates</a>
+            </td>
+            <td width='60%'>列出每个操作系统的预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/provisioning_templates/index.zh_CN.html'>GET /api/locations/:location_id/provisioning_templates</a>
+            </td>
+            <td width='60%'>列出每个位置的预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/provisioning_templates/index.zh_CN.html'>GET /api/organizations/:organization_id/provisioning_templates</a>
+            </td>
+            <td width='60%'>列出每个机构的预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/provisioning_templates/show.zh_CN.html'>GET /api/provisioning_templates/:id</a>
+            </td>
+            <td width='60%'>显示预配模板详情</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/provisioning_templates/create.zh_CN.html'>POST /api/provisioning_templates</a>
+            </td>
+            <td width='60%'>创建预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/provisioning_templates/update.zh_CN.html'>PUT /api/provisioning_templates/:id</a>
+            </td>
+            <td width='60%'>更新预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/provisioning_templates/revision.zh_CN.html'>GET /api/provisioning_templates/revision</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/provisioning_templates/destroy.zh_CN.html'>DELETE /api/provisioning_templates/:id</a>
+            </td>
+            <td width='60%'>删除预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/provisioning_templates/build_pxe_default.zh_CN.html'>POST /api/provisioning_templates/build_pxe_default</a>
+            </td>
+            <td width='60%'>更新所有配置 TFTP 服务器的默认 PXE 菜单</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/provisioning_templates/clone.zh_CN.html'>POST /api/provisioning_templates/:id/clone</a>
+            </td>
+            <td width='60%'>克隆预配模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/provisioning_templates/export.zh_CN.html'>GET /api/provisioning_templates/:id/export</a>
+            </td>
+            <td width='60%'>Export a provisioning template to ERB</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/ptables.zh_CN.html'>
+      Ptables
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ptables/index.zh_CN.html'>GET /api/ptables</a>
+            </td>
+            <td width='60%'>列出所有分区表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ptables/index.zh_CN.html'>GET /api/operatingsystems/:operatingsystem_id/ptables</a>
+            </td>
+            <td width='60%'>列出操作系统的所有分区表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ptables/index.zh_CN.html'>GET /api/locations/:location_id/ptables</a>
+            </td>
+            <td width='60%'>列出每个位置的所有分区表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ptables/index.zh_CN.html'>GET /api/organizations/:organization_id/ptables</a>
+            </td>
+            <td width='60%'>列出每个机构的所有分区表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ptables/show.zh_CN.html'>GET /api/ptables/:id</a>
+            </td>
+            <td width='60%'>显示分区表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ptables/create.zh_CN.html'>POST /api/ptables</a>
+            </td>
+            <td width='60%'>创建分区表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ptables/revision.zh_CN.html'>GET /api/ptables/revision</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ptables/update.zh_CN.html'>PUT /api/ptables/:id</a>
+            </td>
+            <td width='60%'>更新分区表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ptables/destroy.zh_CN.html'>DELETE /api/ptables/:id</a>
+            </td>
+            <td width='60%'>删除分区表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ptables/clone.zh_CN.html'>POST /api/ptables/:id/clone</a>
+            </td>
+            <td width='60%'>克隆模板</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/ptables/export.zh_CN.html'>GET /api/ptables/:id/export</a>
+            </td>
+            <td width='60%'>Export a partition template to ERB</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/puppet_modules.zh_CN.html'>
+      Puppet modules
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppet_modules/index.zh_CN.html'>GET /katello/api/puppet_modules</a>
+            </td>
+            <td width='60%'>List puppet_modules</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppet_modules/index.zh_CN.html'>GET /katello/api/content_views/:content_view_id/filters/:filter_id/puppet_modules</a>
+            </td>
+            <td width='60%'>List puppet_modules</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppet_modules/index.zh_CN.html'>GET /katello/api/content_view_filters/:content_view_filter_id/puppet_modules</a>
+            </td>
+            <td width='60%'>List puppet_modules</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppet_modules/index.zh_CN.html'>GET /katello/api/repositories/:repository_id/puppet_modules</a>
+            </td>
+            <td width='60%'>List puppet_modules</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppet_modules/show.zh_CN.html'>GET /katello/api/puppet_modules/:id</a>
+            </td>
+            <td width='60%'>Show a puppet module</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppet_modules/show.zh_CN.html'>GET /katello/api/repositories/:repository_id/puppet_modules/:id</a>
+            </td>
+            <td width='60%'>Show a puppet module</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppet_modules/compare.zh_CN.html'>GET /katello/api/compare</a>
+            </td>
+            <td width='60%'>List puppet_modules</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/puppetclasses.zh_CN.html'>
+      Puppetclasses
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppetclasses/index.zh_CN.html'>GET /api/puppetclasses</a>
+            </td>
+            <td width='60%'>列出所有 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppetclasses/index.zh_CN.html'>GET /api/hosts/:host_id/puppetclasses</a>
+            </td>
+            <td width='60%'>列出主机的所有 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppetclasses/index.zh_CN.html'>GET /api/hostgroups/:hostgroup_id/puppetclasses</a>
+            </td>
+            <td width='60%'>列出主机组的所有 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppetclasses/index.zh_CN.html'>GET /api/environments/:environment_id/puppetclasses</a>
+            </td>
+            <td width='60%'>列出环境的所有 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppetclasses/show.zh_CN.html'>GET /api/puppetclasses/:id</a>
+            </td>
+            <td width='60%'>显示 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppetclasses/show.zh_CN.html'>GET /api/hosts/:host_id/puppetclasses/:id</a>
+            </td>
+            <td width='60%'>显示主机的 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppetclasses/show.zh_CN.html'>GET /api/hostgroups/:hostgroup_id/puppetclasses/:id</a>
+            </td>
+            <td width='60%'>显示主机组的 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppetclasses/show.zh_CN.html'>GET /api/environments/:environment_id/puppetclasses/:id</a>
+            </td>
+            <td width='60%'>显示环境的 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppetclasses/create.zh_CN.html'>POST /api/puppetclasses</a>
+            </td>
+            <td width='60%'>创建 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppetclasses/update.zh_CN.html'>PUT /api/puppetclasses/:id</a>
+            </td>
+            <td width='60%'>更新 Puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/puppetclasses/destroy.zh_CN.html'>DELETE /api/puppetclasses/:id</a>
+            </td>
+            <td width='60%'>删除 Puppet 类别</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/realms.zh_CN.html'>
+      Realms
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/realms/index.zh_CN.html'>GET /api/realms</a>
+            </td>
+            <td width='60%'>范围列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/realms/show.zh_CN.html'>GET /api/realms/:id</a>
+            </td>
+            <td width='60%'>显示范围</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/realms/create.zh_CN.html'>POST /api/realms</a>
+            </td>
+            <td width='60%'>创建范围</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/realms/update.zh_CN.html'>PUT /api/realms/:id</a>
+            </td>
+            <td width='60%'>更新范围</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/realms/destroy.zh_CN.html'>DELETE /api/realms/:id</a>
+            </td>
+            <td width='60%'>删除范围</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/recurring_logics.zh_CN.html'>
+      Recurring logics
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/recurring_logics/index.zh_CN.html'>GET /foreman_tasks/api/recurring_logics</a>
+            </td>
+            <td width='60%'>List recurring logics</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/recurring_logics/show.zh_CN.html'>GET /foreman_tasks/api/recurring_logics/:id</a>
+            </td>
+            <td width='60%'>Show recurring logic details</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/recurring_logics/cancel.zh_CN.html'>POST /foreman_tasks/api/recurring_logics/:id/cancel</a>
+            </td>
+            <td width='60%'>Cancel recurring logic</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/registries.zh_CN.html'>
+      Registries
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/registries/index.zh_CN.html'>GET /docker/api/v2/registries</a>
+            </td>
+            <td width='60%'>List all docker registries</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/registries/show.zh_CN.html'>GET /docker/api/v2/registries/:id</a>
+            </td>
+            <td width='60%'>Show a docker registry</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/registries/create.zh_CN.html'>POST /docker/api/v2/registries</a>
+            </td>
+            <td width='60%'>Create a docker registry</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/registries/update.zh_CN.html'>PUT /docker/api/v2/registries/:id</a>
+            </td>
+            <td width='60%'>Update a docker registry</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/registries/destroy.zh_CN.html'>DELETE /docker/api/v2/registries/:id</a>
+            </td>
+            <td width='60%'>Delete a docker registry</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/reports.zh_CN.html'>
+      Reports
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/reports/index.zh_CN.html'>GET /api/reports</a>
+            </td>
+            <td width='60%'>列出所有报告</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/reports/show.zh_CN.html'>GET /api/reports/:id</a>
+            </td>
+            <td width='60%'>显示报告</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/reports/create.zh_CN.html'>POST /api/reports</a>
+            </td>
+            <td width='60%'>创建报告</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/reports/destroy.zh_CN.html'>DELETE /api/reports/:id</a>
+            </td>
+            <td width='60%'>删除报告</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/reports/last.zh_CN.html'>GET /api/hosts/:host_id/reports/last</a>
+            </td>
+            <td width='60%'>显示主机的最新报告</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/repositories.zh_CN.html'>
+      Repositories
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/index.zh_CN.html'>GET /katello/api/repositories</a>
+            </td>
+            <td width='60%'>已启用库列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/index.zh_CN.html'>GET /katello/api/content_views/:id/repositories</a>
+            </td>
+            <td width='60%'>内容视图的库列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/index.zh_CN.html'>GET /katello/api/organizations/:organization_id/repositories</a>
+            </td>
+            <td width='60%'>List of repositories in an organization</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/index.zh_CN.html'>GET /katello/api/organizations/:organization_id/environments/:environment_id/repositories</a>
+            </td>
+            <td width='60%'>List repositories in the environment</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/index.zh_CN.html'>GET /katello/api/products/:product_id/repositories</a>
+            </td>
+            <td width='60%'>List of repositories for a product</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/index.zh_CN.html'>GET /katello/api/environments/:environment_id/products/:product_id/repositories</a>
+            </td>
+            <td width='60%'>List of repositories belonging to a product in an environment</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/create.zh_CN.html'>POST /katello/api/repositories</a>
+            </td>
+            <td width='60%'>创建定制库</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/repository_types.zh_CN.html'>GET /katello/api/repositories/repository_types</a>
+            </td>
+            <td width='60%'>Show the available repository types</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/show.zh_CN.html'>GET /katello/api/repositories/:id</a>
+            </td>
+            <td width='60%'>Show a repository</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/sync.zh_CN.html'>POST /katello/api/repositories/:id/sync</a>
+            </td>
+            <td width='60%'>同步库</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/export.zh_CN.html'>POST /katello/api/repositories/:id/export</a>
+            </td>
+            <td width='60%'>Export a repository</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/update.zh_CN.html'>PUT /katello/api/repositories/:id</a>
+            </td>
+            <td width='60%'>更新库</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/destroy.zh_CN.html'>DELETE /katello/api/repositories/:id</a>
+            </td>
+            <td width='60%'>消除定制库</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/sync_complete.zh_CN.html'>POST /katello/api/repositories/sync_complete</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/remove_content.zh_CN.html'>PUT /katello/api/repositories/:id/remove_packages</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/remove_content.zh_CN.html'>PUT /katello/api/repositories/:id/remove_docker_manifests</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/remove_content.zh_CN.html'>PUT /katello/api/repositories/:id/remove_puppet_modules</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/remove_content.zh_CN.html'>PUT /katello/api/repositories/:id/remove_content</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/upload_content.zh_CN.html'>POST /katello/api/repositories/:id/upload_content</a>
+            </td>
+            <td width='60%'>将内容上传到库中</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/import_uploads.zh_CN.html'>PUT /katello/api/repositories/:id/import_uploads</a>
+            </td>
+            <td width='60%'>将上传导入库</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories/gpg_key_content.zh_CN.html'>GET /katello/api/repositories/:id/gpg_key_content</a>
+            </td>
+            <td width='60%'>返回由 yum 直接使用的库 gpg 密钥内容</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/repositories_bulk_actions.zh_CN.html'>
+      Repositories bulk actions
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories_bulk_actions/destroy_repositories.zh_CN.html'>PUT /katello/api/repositories/bulk/destroy</a>
+            </td>
+            <td width='60%'>消除一个或多个库</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repositories_bulk_actions/sync_repositories.zh_CN.html'>POST /katello/api/repositories/bulk/sync</a>
+            </td>
+            <td width='60%'>同步库</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/repository_sets.zh_CN.html'>
+      Repository sets
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repository_sets/index.zh_CN.html'>GET /katello/api/products/:product_id/repository_sets</a>
+            </td>
+            <td width='60%'>列出产品的库集合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repository_sets/show.zh_CN.html'>GET /katello/api/products/:product_id/repository_sets/:id</a>
+            </td>
+            <td width='60%'>获取库集合信息</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repository_sets/available_repositories.zh_CN.html'>GET /katello/api/products/:product_id/repository_sets/:id/available_repositories</a>
+            </td>
+            <td width='60%'>Get list of available repositories for the repository set</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repository_sets/enable.zh_CN.html'>PUT /katello/api/products/:product_id/repository_sets/:id/enable</a>
+            </td>
+            <td width='60%'>在集合中启用库</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/repository_sets/disable.zh_CN.html'>PUT /katello/api/products/:product_id/repository_sets/:id/disable</a>
+            </td>
+            <td width='60%'>Disable a repository from the set</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/roles.zh_CN.html'>
+      Roles
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/roles/index.zh_CN.html'>GET /api/roles</a>
+            </td>
+            <td width='60%'>列出所有角色</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/roles/show.zh_CN.html'>GET /api/roles/:id</a>
+            </td>
+            <td width='60%'>显示角色</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/roles/create.zh_CN.html'>POST /api/roles</a>
+            </td>
+            <td width='60%'>生成角色</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/roles/update.zh_CN.html'>PUT /api/roles/:id</a>
+            </td>
+            <td width='60%'>更新角色</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/roles/destroy.zh_CN.html'>DELETE /api/roles/:id</a>
+            </td>
+            <td width='60%'>删除角色</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/settings.zh_CN.html'>
+      Settings
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/settings/index.zh_CN.html'>GET /api/settings</a>
+            </td>
+            <td width='60%'>列出所有设置</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/settings/show.zh_CN.html'>GET /api/settings/:id</a>
+            </td>
+            <td width='60%'>显示设置</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/settings/update.zh_CN.html'>PUT /api/settings/:id</a>
+            </td>
+            <td width='60%'>更新设置</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/smart_class_parameters.zh_CN.html'>
+      Smart class parameters
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_class_parameters/index.zh_CN.html'>GET /api/smart_class_parameters</a>
+            </td>
+            <td width='60%'>列出所有智能类别参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_class_parameters/index.zh_CN.html'>GET /api/hosts/:host_id/smart_class_parameters</a>
+            </td>
+            <td width='60%'>具体主机的智能类别参数列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_class_parameters/index.zh_CN.html'>GET /api/hostgroups/:hostgroup_id/smart_class_parameters</a>
+            </td>
+            <td width='60%'>具体主机组的智能类别参数列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_class_parameters/index.zh_CN.html'>GET /api/puppetclasses/:puppetclass_id/smart_class_parameters</a>
+            </td>
+            <td width='60%'>具体 Puppet 类别的智能类别参数列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_class_parameters/index.zh_CN.html'>GET /api/environments/:environment_id/smart_class_parameters</a>
+            </td>
+            <td width='60%'>具体环境的智能类别参数列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_class_parameters/index.zh_CN.html'>GET /api/environments/:environment_id/puppetclasses/:puppetclass_id/smart_class_parameters</a>
+            </td>
+            <td width='60%'>具体环境/Puppet 类别组合的智能类别参数列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_class_parameters/show.zh_CN.html'>GET /api/smart_class_parameters/:id</a>
+            </td>
+            <td width='60%'>显示智能类别参数</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_class_parameters/update.zh_CN.html'>PUT /api/smart_class_parameters/:id</a>
+            </td>
+            <td width='60%'>更新智能类别参数</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/smart_proxies.zh_CN.html'>
+      Smart proxies
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_proxies/import_puppetclasses.zh_CN.html'>POST /api/smart_proxies/:id/import_puppetclasses</a>
+            </td>
+            <td width='60%'>从 puppet 代理服务器导入 puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_proxies/import_puppetclasses.zh_CN.html'>POST /api/smart_proxies/:smart_proxy_id/environments/:id/import_puppetclasses</a>
+            </td>
+            <td width='60%'>从 puppet 代理服务器为环境导入 puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_proxies/import_puppetclasses.zh_CN.html'>POST /api/environments/:environment_id/smart_proxies/:id/import_puppetclasses</a>
+            </td>
+            <td width='60%'>从 puppet 代理服务器为环境导入 puppet 类别</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_proxies/index.zh_CN.html'>GET /api/smart_proxies</a>
+            </td>
+            <td width='60%'>列出所有智能代理服务器</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_proxies/show.zh_CN.html'>GET /api/smart_proxies/:id</a>
+            </td>
+            <td width='60%'>显示智能代理服务器</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_proxies/create.zh_CN.html'>POST /api/smart_proxies</a>
+            </td>
+            <td width='60%'>创建智能代理服务器</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_proxies/update.zh_CN.html'>PUT /api/smart_proxies/:id</a>
+            </td>
+            <td width='60%'>更新智能代理服务器</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_proxies/destroy.zh_CN.html'>DELETE /api/smart_proxies/:id</a>
+            </td>
+            <td width='60%'>删除智能代理服务器</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_proxies/refresh.zh_CN.html'>PUT /api/smart_proxies/:id/refresh</a>
+            </td>
+            <td width='60%'>刷新智能代理服务器功能</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/smart_variables.zh_CN.html'>
+      Smart variables
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_variables/index.zh_CN.html'>GET /api/smart_variables</a>
+            </td>
+            <td width='60%'>列出所有智能变量</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_variables/index.zh_CN.html'>GET /api/hosts/:host_id/smart_variables</a>
+            </td>
+            <td width='60%'>具体主机的智能变量列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_variables/index.zh_CN.html'>GET /api/hostgroups/:hostgroup_id/smart_variables</a>
+            </td>
+            <td width='60%'>具体主机组的智能变量列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_variables/index.zh_CN.html'>GET /api/puppetclasses/:puppetclass_id/smart_variables</a>
+            </td>
+            <td width='60%'>具体 Puppet 类别的智能变量列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_variables/show.zh_CN.html'>GET /api/smart_variables/:id</a>
+            </td>
+            <td width='60%'>显示智能变量</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_variables/create.zh_CN.html'>POST /api/smart_variables</a>
+            </td>
+            <td width='60%'>创建智能变量</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_variables/update.zh_CN.html'>PUT /api/smart_variables/:id</a>
+            </td>
+            <td width='60%'>更新智能变量</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/smart_variables/destroy.zh_CN.html'>DELETE /api/smart_variables/:id</a>
+            </td>
+            <td width='60%'>删除智能参数</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/statistics.zh_CN.html'>
+      Statistics
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/statistics/index.zh_CN.html'>GET /api/statistics</a>
+            </td>
+            <td width='60%'>获取统计数据</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/subnets.zh_CN.html'>
+      Subnets
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subnets/index.zh_CN.html'>GET /api/subnets</a>
+            </td>
+            <td width='60%'>子网列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subnets/index.zh_CN.html'>GET /api/domains/:domain_id/subnets</a>
+            </td>
+            <td width='60%'>域的子网列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subnets/index.zh_CN.html'>GET /api/locations/:location_id/subnets</a>
+            </td>
+            <td width='60%'>每个位置的子网列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subnets/index.zh_CN.html'>GET /api/organizations/:organization_id/subnets</a>
+            </td>
+            <td width='60%'>每个机构的子网列表</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subnets/show.zh_CN.html'>GET /api/subnets/:id</a>
+            </td>
+            <td width='60%'>显示子网</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subnets/create.zh_CN.html'>POST /api/subnets</a>
+            </td>
+            <td width='60%'>创建子网</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subnets/update.zh_CN.html'>PUT /api/subnets/:id</a>
+            </td>
+            <td width='60%'>更新子网</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subnets/destroy.zh_CN.html'>DELETE /api/subnets/:id</a>
+            </td>
+            <td width='60%'>删除子网</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subnets/freeip.zh_CN.html'>GET /api/subnets/:id/freeip</a>
+            </td>
+            <td width='60%'>Provides an unused IP address in this subnet</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/subscriptions.zh_CN.html'>
+      Subscriptions
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subscriptions/index.zh_CN.html'>GET /katello/api/organizations/:organization_id/subscriptions</a>
+            </td>
+            <td width='60%'>列出机构订阅</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subscriptions/index.zh_CN.html'>GET /katello/api/activation_keys/:activation_key_id/subscriptions</a>
+            </td>
+            <td width='60%'>列出所有激活码订阅</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subscriptions/index.zh_CN.html'>GET /katello/api/subscriptions</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subscriptions/show.zh_CN.html'>GET /katello/api/organizations/:organization_id/subscriptions/:id</a>
+            </td>
+            <td width='60%'>显示订阅</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subscriptions/show.zh_CN.html'>GET /katello/api/subscriptions/:id</a>
+            </td>
+            <td width='60%'>显示订阅</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subscriptions/create.zh_CN.html'>POST /katello/api/activation_keys/:activation_key_id/subscriptions</a>
+                <code>DEPRECATED</code>
+            </td>
+            <td width='60%'>在激活码中添加订阅</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subscriptions/destroy.zh_CN.html'>DELETE /katello/api/activation_keys/:activation_key_id/subscriptions/:id</a>
+                <code>DEPRECATED</code>
+            </td>
+            <td width='60%'>取消附加订阅</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subscriptions/upload.zh_CN.html'>POST /katello/api/organizations/:organization_id/subscriptions/upload</a>
+            </td>
+            <td width='60%'>上传订阅清单</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subscriptions/refresh_manifest.zh_CN.html'>PUT /katello/api/organizations/:organization_id/subscriptions/refresh_manifest</a>
+            </td>
+            <td width='60%'>为 Red Hat 供应商刷新之前导入的清单</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subscriptions/delete_manifest.zh_CN.html'>POST /katello/api/organizations/:organization_id/subscriptions/delete_manifest</a>
+            </td>
+            <td width='60%'>从 Red Hat 供应商中删除清单</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/subscriptions/manifest_history.zh_CN.html'>GET /katello/api/organizations/:organization_id/subscriptions/manifest_history</a>
+            </td>
+            <td width='60%'>获取订阅的清单历史记录</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/sync.zh_CN.html'>
+      Sync
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync/index.zh_CN.html'>GET /katello/api/organizations/:organization_id/products/:product_id/sync</a>
+            </td>
+            <td width='60%'>获取给定产品的库同步状态</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync/index.zh_CN.html'>GET /katello/api/repositories/:repository_id/sync</a>
+            </td>
+            <td width='60%'>获取给定库的同步状态</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/sync_plans.zh_CN.html'>
+      Sync plans
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync_plans/index.zh_CN.html'>GET /katello/api/sync_plans</a>
+            </td>
+            <td width='60%'>列出同步计划</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync_plans/index.zh_CN.html'>GET /katello/api/organizations/:organization_id/sync_plans</a>
+            </td>
+            <td width='60%'></td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync_plans/show.zh_CN.html'>GET /katello/api/organizations/:organization_id/sync_plans/:id</a>
+            </td>
+            <td width='60%'>显示同步计划</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync_plans/show.zh_CN.html'>GET /katello/api/sync_plans/:id</a>
+            </td>
+            <td width='60%'>显示同步计划</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync_plans/create.zh_CN.html'>POST /katello/api/organizations/:organization_id/sync_plans</a>
+            </td>
+            <td width='60%'>创建同步计划</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync_plans/update.zh_CN.html'>PUT /katello/api/organizations/:organization_id/sync_plans/:id</a>
+            </td>
+            <td width='60%'>更新同步计划</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync_plans/update.zh_CN.html'>PUT /katello/api/sync_plans/:id</a>
+            </td>
+            <td width='60%'>更新同步计划</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync_plans/destroy.zh_CN.html'>DELETE /katello/api/organizations/:organization_id/sync_plans/:id</a>
+            </td>
+            <td width='60%'>消除同步计划</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync_plans/destroy.zh_CN.html'>DELETE /katello/api/sync_plans/:id</a>
+            </td>
+            <td width='60%'>消除同步计划</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync_plans/add_products.zh_CN.html'>PUT /katello/api/organizations/:organization_id/sync_plans/:id/add_products</a>
+            </td>
+            <td width='60%'>在同步计划中添加产品</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync_plans/remove_products.zh_CN.html'>PUT /katello/api/organizations/:organization_id/sync_plans/:id/remove_products</a>
+            </td>
+            <td width='60%'>从同步计划中删除产品</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync_plans/sync.zh_CN.html'>PUT /katello/api/sync_plans/:id/sync</a>
+            </td>
+            <td width='60%'>Initiate a sync of the products attached to the sync plan</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/sync_plans/sync.zh_CN.html'>PUT /katello/api/organizations/:organization_id/sync_plans/:id/sync</a>
+            </td>
+            <td width='60%'>Initiate a sync of the products attached to the sync plan</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/tasks.zh_CN.html'>
+      Tasks
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/tasks/index.zh_CN.html'>GET /api/orchestration/:id/tasks</a>
+            </td>
+            <td width='60%'>列出给定业务流程事件的所有任务</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/template_combinations.zh_CN.html'>
+      Template combinations
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/index.zh_CN.html'>GET /api/config_templates/:config_template_id/template_combinations</a>
+                <code>DEPRECATED</code>
+            </td>
+            <td width='60%'>列出模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/index.zh_CN.html'>GET /api/provisioning_templates/:provisioning_template_id/template_combinations</a>
+            </td>
+            <td width='60%'>列出模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/index.zh_CN.html'>GET /api/hostgroups/:hostgroup_id/template_combinations</a>
+            </td>
+            <td width='60%'>列出模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/index.zh_CN.html'>GET /api/environments/:environment_id/template_combinations</a>
+            </td>
+            <td width='60%'>列出模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/create.zh_CN.html'>POST /api/config_templates/:config_template_id/template_combinations</a>
+                <code>DEPRECATED</code>
+            </td>
+            <td width='60%'>添加模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/create.zh_CN.html'>POST /api/provisioning_templates/:provisioning_template_id/template_combinations</a>
+            </td>
+            <td width='60%'>添加模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/create.zh_CN.html'>POST /api/hostgroups/:hostgroup_id/template_combinations</a>
+            </td>
+            <td width='60%'>添加模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/create.zh_CN.html'>POST /api/environments/:environment_id/template_combinations</a>
+            </td>
+            <td width='60%'>添加模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/show.zh_CN.html'>GET /api/template_combinations/:id</a>
+            </td>
+            <td width='60%'>显示模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/show.zh_CN.html'>GET /api/config_templates/:config_template_id/template_combinations/:id</a>
+                <code>DEPRECATED</code>
+            </td>
+            <td width='60%'>显示模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/show.zh_CN.html'>GET /api/provisioning_templates/:provisioning_template_id/template_combinations/:id</a>
+            </td>
+            <td width='60%'>显示模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/show.zh_CN.html'>GET /api/hostgroups/:hostgroup_id/template_combinations/:id</a>
+            </td>
+            <td width='60%'>显示模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/show.zh_CN.html'>GET /api/environments/:environment_id/template_combinations/:id</a>
+            </td>
+            <td width='60%'>显示模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/update.zh_CN.html'>PUT /api/provisioning_templates/:provisioning_template_id/template_combinations/:id</a>
+            </td>
+            <td width='60%'>更新模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/update.zh_CN.html'>PUT /api/config_templates/:config_template_id/template_combinations/:id</a>
+                <code>DEPRECATED</code>
+            </td>
+            <td width='60%'>更新模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/update.zh_CN.html'>PUT /api/hostgroups/:hostgroup_id/template_combinations/:id</a>
+            </td>
+            <td width='60%'>更新模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/update.zh_CN.html'>PUT /api/environments/:environment_id/template_combinations/:id</a>
+            </td>
+            <td width='60%'>更新模板组合</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_combinations/destroy.zh_CN.html'>DELETE /api/template_combinations/:id</a>
+            </td>
+            <td width='60%'>删除模板组合</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/template_kinds.zh_CN.html'>
+      Template kinds
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/template_kinds/index.zh_CN.html'>GET /api/template_kinds</a>
+            </td>
+            <td width='60%'>列出所有模板类型</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/usergroups.zh_CN.html'>
+      Usergroups
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/usergroups/index.zh_CN.html'>GET /api/usergroups</a>
+            </td>
+            <td width='60%'>列出所有用户组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/usergroups/show.zh_CN.html'>GET /api/usergroups/:id</a>
+            </td>
+            <td width='60%'>显示用户组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/usergroups/create.zh_CN.html'>POST /api/usergroups</a>
+            </td>
+            <td width='60%'>创建用户组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/usergroups/update.zh_CN.html'>PUT /api/usergroups/:id</a>
+            </td>
+            <td width='60%'>更新用户组</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/usergroups/destroy.zh_CN.html'>DELETE /api/usergroups/:id</a>
+            </td>
+            <td width='60%'>删除用户组</td>
+          </tr>
+    </tbody>
+  </table>
+  <h2>
+    <a href='../apidoc/v2/users.zh_CN.html'>
+      Users
+    </a><br>
+    <small></small>
+  </h2>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>资源</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/users/index.zh_CN.html'>GET /api/users</a>
+            </td>
+            <td width='60%'>列出所有用户</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/users/index.zh_CN.html'>GET /api/auth_source_ldaps/:auth_source_ldap_id/users</a>
+            </td>
+            <td width='60%'>列出 LDAP 认证源的所有用户</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/users/index.zh_CN.html'>GET /api/usergroups/:usergroup_id/users</a>
+            </td>
+            <td width='60%'>列出用户组的所有用户</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/users/index.zh_CN.html'>GET /api/roles/:role_id/users</a>
+            </td>
+            <td width='60%'>列出角色的所有用户</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/users/index.zh_CN.html'>GET /api/locations/:location_id/users</a>
+            </td>
+            <td width='60%'>列出位置的所有用户</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/users/index.zh_CN.html'>GET /api/organizations/:organization_id/users</a>
+            </td>
+            <td width='60%'>列出机构的所有用户</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/users/show.zh_CN.html'>GET /api/users/:id</a>
+            </td>
+            <td width='60%'>显示用户</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/users/create.zh_CN.html'>POST /api/users</a>
+            </td>
+            <td width='60%'>创建用户</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/users/update.zh_CN.html'>PUT /api/users/:id</a>
+            </td>
+            <td width='60%'>更新用户</td>
+          </tr>
+          <tr>
+            <td>
+              <a href='../apidoc/v2/users/destroy.zh_CN.html'>DELETE /api/users/:id</a>
+            </td>
+            <td width='60%'>删除用户</td>
+          </tr>
+    </tbody>
+  </table>
+
+  
+
+        
+      </div>
+    </div>
+    <hr>
+    <footer></footer>
+  </div>
+  <script type='text/javascript' src='../apidoc/javascripts/bundled/jquery.js'></script>
+<script type='text/javascript' src='../apidoc/javascripts/bundled/bootstrap-collapse.js'></script>
+<script type='text/javascript' src='../apidoc/javascripts/bundled/prettify.js'></script>
+<script type='text/javascript' src='../apidoc/javascripts/apipie.js'></script>
+</body>
+</html>
